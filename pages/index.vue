@@ -156,7 +156,7 @@ export default {
       this.stopInterval()
       this.state.endTime = null
       this.state.startTime = null
-      this.state.score = null
+      this.state.score = 0
       this.state.miss = 0
       this.state.activeMoles = []
     },
