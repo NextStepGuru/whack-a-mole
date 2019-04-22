@@ -1,6 +1,6 @@
 <template lang="pug">
   section.section
-    .columns.is-multiline
+    .columns.is-multiline.is-mobile
       .column.is-one-quarter
         mole-hill
       .column.is-one-quarter
