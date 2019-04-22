@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container
+  .mole-demo-app
     nuxt
 </template>
 
