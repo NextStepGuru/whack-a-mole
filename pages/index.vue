@@ -23,11 +23,11 @@
               h2.has-text-weight-bold Click Misses
               span.is-size-2 {{ state.miss}}
             .column.has-text-centered
-              h2.has-text-weight-bold Time Left
+              h2.has-text-weight-bold Seconds Left
               span.is-size-2 {{ timeLeft() }}
             .column.has-text-centered
               h2.has-text-weight-bold Time
-              span.is-size-2 00:00
+              span.is-size-2 {{ getFormattedTime() }}
 
   .hero.is-light
     .hero-body
@@ -128,6 +128,9 @@ export default {
     this.resetState()
   },
   methods: {
+    getFormattedTime () {
+      return Moment().format("hh:mm")
+    },
     saveControls () {
       this.state.isModalConfigActive = !this.state.isModalConfigActive
       this.state.moles = {}
@@ -174,8 +177,6 @@ export default {
       this.stopInterval()
       this.state.endTime = null
       this.state.startTime = null
-      this.state.score = 0
-      this.state.miss = 0
       this.state.activeMoles = []
     },
     stopInterval () {
@@ -199,6 +200,10 @@ export default {
     },
     changeInterval () {
       let vm = this
+
+      vm.state.score = 0
+      vm.state.miss = 0
+
       clearInterval(vm.state.interval)
       vm.state.interval = setInterval (() => {
         /*
@@ -215,10 +220,10 @@ export default {
           vm.state.activeMoles.shift()
         }
 
-        if (Moment().diff(this.state.endTime, 'second') > 0) {
-          this.computeScore()
+        if (Moment().diff(vm.state.endTime, 'second') > 0) {
+          vm.computeScore()
         }
-      }, this.state.speedInSeconds * 1000)
+      }, vm.state.speedInSeconds * 1000)
     }
   }
 }
