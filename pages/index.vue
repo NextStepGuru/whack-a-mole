@@ -1,6 +1,30 @@
 <template lang="pug">
   section.section
-    mole-hill
+    .columns.is-multiline
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
+      .column.is-one-quarter
+        mole-hill
 </template>
 
 <script>
