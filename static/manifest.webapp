@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": null,
+  "description": "A whack-a-mole demo app highlighting vue, nuxt, hapi, & buety",
+  "icons": {
+    "60": "/firefox_app_60x60.png",
+    "128": "/firefox_app_128x128.png",
+    "512": "/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Jeremy R DeYoung",
+    "url": null
+  }
+}

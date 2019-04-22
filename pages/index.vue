@@ -24,7 +24,7 @@
           h2 Time Left
           span {{ timeLeft() }} seconds
 
-  .hero.is-success
+  .hero.is-light
     .hero-body
       .container
         .columns.is-multiline.is-mobile
@@ -83,7 +83,7 @@ const DefaultState = {
   interval: null,
   speedInSeconds: 1,
   maxMoles: 1,
-  totalMoles: 60,
+  totalMoles: 24,
   activeMoles: [],
   moles: {
   }
@@ -105,11 +105,11 @@ export default {
         case 9:
           return 'is-one-third'
 
-        case 12:
         case 16:
-        case 24:
+        case 12:
           return 'is-one-quarter'
 
+        case 24:
         case 18:
           return 'is-2'
       }

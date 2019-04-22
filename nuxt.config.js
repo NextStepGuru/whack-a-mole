@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const FavIconConfig = require('./static/nuxt.json')
 
 module.exports = {
   mode: 'spa',
@@ -10,10 +11,14 @@ module.exports = {
     title: "Whack-a-mole Demo",
     meta: [
       { charset: 'utf-8' },
+      { name: 'mobile-web-app-capable', content: 'yes' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      ...FavIconConfig.meta
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      ...FavIconConfig.link
+    ]
   },
 
   /*
