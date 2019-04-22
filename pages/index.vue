@@ -1,39 +1,47 @@
 <template lang="pug">
 .mole-body
   .container
-    section.section
-      .columns
-        .column.has-text-centered
-          .buttons
-            button.button.is-success(
-              @click="start",
-              :disabled="state.startTime") Start
-            button.button.is-danger(
-              @click="stopInterval",
-              :disabled="!state.startTime") Stop
-            button.button.is-info(
-              @click="state.isModalConfigActive = !state.isModalConfigActive",
-              :disabled="state.startTime") Controls
-        .column.has-text-centered
-          h2 Score
-          span {{ state.score}}
-        .column.has-text-centered
-          h2 Click Misses
-          span {{ state.miss}}
-        .column.has-text-centered
-          h2 Time Left
-          span {{ timeLeft() }} seconds
+    .columns
+      .column.is-2.has-text-centered
+        .buttons
+          button.button.is-success(
+            @click="start",
+            :disabled="state.startTime") Start
+          button.button.is-danger(
+            @click="stopInterval",
+            :disabled="!state.startTime") Stop
+          button.button.is-info(
+            @click="state.isModalConfigActive = !state.isModalConfigActive",
+            :disabled="state.startTime") Controls
+      .column.is-8
+        .scoreboard
+          .columns
+            .column.has-text-centered
+              h2.has-text-weight-bold Score
+              span.is-size-2 {{ state.score}}
+            .column.has-text-centered
+              h2.has-text-weight-bold Click Misses
+              span.is-size-2 {{ state.miss}}
+            .column.has-text-centered
+              h2.has-text-weight-bold Time Left
+              span.is-size-2 {{ timeLeft() }}
+            .column.has-text-centered
+              h2.has-text-weight-bold Time
+              span.is-size-2 00:00
 
   .hero.is-light
     .hero-body
       .container
-        .columns.is-multiline.is-mobile
-          .column(:class="computeClassSize", v-for="(item, idx) in state.moles")
-            mole-hill(
-              :key="idx",
-              v-bind="item",
-              @score="score",
-              @miss="miss")
+        .columns
+          .column.is-2
+          .column.is-8
+            .columns.is-multiline.is-mobile
+              .column(:class="computeClassSize", v-for="(item, idx) in state.moles")
+                mole-hill(
+                  :key="idx",
+                  v-bind="item",
+                  @score="score",
+                  @miss="miss")
   b-modal(
     :active.sync="state.isModalConfigActive",
     :width="640",
@@ -141,9 +149,19 @@ export default {
       return this.state.maxTimeInSeconds - Moment().diff(this.state.startTime, 'second') || 0
     },
     miss () {
+      this.$toast.open({
+          duration: 1000,
+          message: `You Missed!!`,
+          type: 'is-danger'
+      })
       this.state.miss++
     },
     score () {
+      this.$toast.open({
+        duration: 1000,
+        message: `Hit! Congrats on Whacking that Mole!`,
+        type: 'is-success'
+      })
       this.state.score++
     },
     getRandomInt(min, max) {
@@ -205,3 +223,14 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+.scoreboard
+  font-family 'Orbitron', sans-serif
+  background url('/scoreboard.svg') no-repeat
+  background-size cover
+  object-fit cover
+  overflow hidden
+  color white
+  padding-top 170px
+</style>
