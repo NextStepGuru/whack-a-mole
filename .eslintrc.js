@@ -4,21 +4,31 @@ module.exports = {
     browser: true,
     node: true
   },
+  globals: {
+    "chrome": true
+  },
   parserOptions: {
     parser: 'babel-eslint'
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended',
-    'plugin:prettier/recommended',
+    'standard',
+    // 'plugin:@typescript-eslint/recommended',
+    'plugin:vue/recommended',
     'prettier',
     'prettier/vue'
   ],
+  // required to lint *.vue files
   plugins: [
+    'vue',
     'prettier'
   ],
   // add your custom rules here
   rules: {
-    'nuxt/no-cjs-in-config': 'off'
+    // '@typescript-eslint/indent': ['error', 2],
+    'no-multiple-empty-lines': ['error', {max: 2}],
+    // allow paren-less arrow functions
+    'arrow-parens': 0,
+    // allow async-await
+    'generator-star-spacing': 0
   }
 }

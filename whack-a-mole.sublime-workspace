@@ -1,0 +1,1886 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Logo",
+				"Logo.vue\t(index.vue)"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"Bulm",
+				"BulmaSteps"
+			],
+			[
+				"RES",
+				"RESPONSE"
+			],
+			[
+				"Cloudin",
+				"CloudinarySDK"
+			],
+			[
+				"verifi",
+				"verifiedStatusId"
+			],
+			[
+				"Amaz",
+				"AmazonMWSClient"
+			],
+			[
+				"Inbound",
+				"InboundShipmentItems.member"
+			],
+			[
+				"thisCH",
+				"thisChannelInventory"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"inventoryLo",
+				"inventoryLocationItemId"
+			],
+			[
+				"quantityO",
+				"quantityOnHand"
+			],
+			[
+				"next",
+				"nextToken"
+			],
+			[
+				"upsert",
+				"upsertGraph"
+			],
+			[
+				"origin",
+				"originalInventory"
+			],
+			[
+				"pickRe",
+				"pickRequests"
+			],
+			[
+				"read",
+				"readFileSync"
+			],
+			[
+				"requets",
+				"request.knex"
+			],
+			[
+				"al",
+				"alternativeId"
+			],
+			[
+				"request",
+				"request.knex\t(scribble.js)"
+			],
+			[
+				"up",
+				"upsertGraph"
+			],
+			[
+				"InventoryLoca",
+				"InventoryLocationItem"
+			],
+			[
+				"lookupIn",
+				"lookupInventoryLocationData"
+			],
+			[
+				"sour",
+				"sourceItem"
+			],
+			[
+				"channelList",
+				"channelListingData"
+			],
+			[
+				"fu",
+				"fulfillment-center-id"
+			],
+			[
+				"channelLi",
+				"channelListingSku"
+			],
+			[
+				"broad",
+				"broadcastData"
+			],
+			[
+				"sandbox",
+				"sandbox_blackfisk\t(config.js)"
+			],
+			[
+				"channelOrderStatus",
+				"channelOrderStatusId"
+			],
+			[
+				"Chan",
+				"ChannelOrder"
+			],
+			[
+				"systemOrer",
+				"systemOrderStatusId"
+			],
+			[
+				"curren",
+				"currentEnvironment"
+			],
+			[
+				"requet",
+				"request.knex"
+			],
+			[
+				"mu",
+				"multiplierCount"
+			],
+			[
+				"mult",
+				"multiplierCount\t(Chaos.vue)"
+			],
+			[
+				"acti",
+				"activeTitle"
+			],
+			[
+				"quantities",
+				"quantitiesResult4"
+			],
+			[
+				"chann",
+				"channelOrderId\t(Chaos.vue)"
+			],
+			[
+				"filter",
+				"filterPickItems"
+			],
+			[
+				"chaos",
+				"chaosZone"
+			],
+			[
+				"lookup",
+				"lookupILI"
+			],
+			[
+				"cant",
+				"cantFindBy\t(chaos.js)"
+			],
+			[
+				"destinationDiv",
+				"destinationDivisionInventory"
+			],
+			[
+				"PickR",
+				"PickRequestItem"
+			],
+			[
+				"pickReference",
+				"pickRequestReferenceId"
+			],
+			[
+				"pickRequ",
+				"pickRequestTypeId"
+			],
+			[
+				"physi",
+				"physicalAt"
+			],
+			[
+				"move",
+				"moveInventoryLocationIds"
+			],
+			[
+				"findIn",
+				"findItemIndex"
+			],
+			[
+				"warehouseZoneRowSect",
+				"warehouseZoneRowSection"
+			],
+			[
+				"soure",
+				"sourceDivisionInventory"
+			],
+			[
+				"statM",
+				"statMatchedDestination"
+			],
+			[
+				"divi",
+				"divisionCount\t(ChaosCheckIn.vue)"
+			],
+			[
+				"des",
+				"destinationAdded"
+			],
+			[
+				"source",
+				"sourceDivisionInventory"
+			],
+			[
+				"warehouse",
+				"warehouseDivision\t(Chaos.vue)"
+			],
+			[
+				"form",
+				"formattedData"
+			],
+			[
+				"invetnory",
+				"inventoryLocation"
+			],
+			[
+				"Invetnory",
+				"Inventory\t(blackfisk.js)"
+			],
+			[
+				"quantit",
+				"quantity"
+			],
+			[
+				"qua",
+				"quantity"
+			],
+			[
+				"quantity",
+				"quantityAllocated"
+			],
+			[
+				"return",
+				"returnData"
+			],
+			[
+				"easypost",
+				"easypostJSON"
+			],
+			[
+				"easypo",
+				"easypostJSON"
+			],
+			[
+				"stateOr",
+				"stateOrProvince"
+			],
+			[
+				"stateOrp",
+				"stateOrProvidence"
+			],
+			[
+				"addr",
+				"address"
+			],
+			[
+				"address",
+				"addressLine1"
+			],
+			[
+				"valida",
+				"validateAddress"
+			],
+			[
+				"systemOrderStatus",
+				"systemOrderStatusId"
+			],
+			[
+				"account",
+				"accountId"
+			],
+			[
+				"format",
+				"formatChannelOrderAPI"
+			],
+			[
+				"acc",
+				"accountId"
+			],
+			[
+				"default",
+				"defaultShippingIntegrationId"
+			],
+			[
+				"response",
+				"responseData"
+			],
+			[
+				"chan",
+				"channelId"
+			],
+			[
+				"Exte",
+				"ExtendedOrderID"
+			],
+			[
+				"Ext",
+				"ExtendedOrderID\t(channelOrderItemsAPI.js)"
+			],
+			[
+				"Quant",
+				"QuantityPurchased"
+			],
+			[
+				"Tax",
+				"TaxDetails"
+			],
+			[
+				"pickRequestStat",
+				"pickRequestStatusId"
+			],
+			[
+				"pickRefer",
+				"p.pickRequestReferenceId"
+			],
+			[
+				"order",
+				"orderTotal"
+			],
+			[
+				"PaymentMethod",
+				"PaymentMethodDetails"
+			],
+			[
+				"retur",
+				"returnData"
+			],
+			[
+				"Error",
+				"ErrorResponse"
+			],
+			[
+				"last",
+				"lastSyncedAt"
+			],
+			[
+				"findA",
+				"findActiveGroupIds"
+			],
+			[
+				"tas",
+				"taskData"
+			],
+			[
+				"formatted",
+				"formattedChannelOrderData"
+			],
+			[
+				"system",
+				"systemOrderStatusId\t(blackfisk.js)"
+			],
+			[
+				"Mapp",
+				"MapperUtilities"
+			],
+			[
+				"thisRepo",
+				"thisReportData"
+			],
+			[
+				"save",
+				"savepoint\t(amazonFormatUtilities.js)"
+			],
+			[
+				"shipped",
+				"shippedBy"
+			],
+			[
+				"latest",
+				"latestShippedAt\t(amazon.js)"
+			],
+			[
+				"channelO",
+				"channelOrderAPI.js"
+			],
+			[
+				"channelOrder",
+				"channelOrderNumber"
+			],
+			[
+				"pickRequest",
+				"pickRequestItem.js"
+			],
+			[
+				"load",
+				"loadingData"
+			],
+			[
+				"unk",
+				"unknownLocation"
+			],
+			[
+				"modi",
+				"modifiedBy"
+			],
+			[
+				"created",
+				"createdAt"
+			],
+			[
+				"require",
+				"requiredColumns"
+			],
+			[
+				"pickReq",
+				"pickRequestData"
+			],
+			[
+				"is",
+				"isCantfind"
+			],
+			[
+				"pick",
+				"pickBatch"
+			],
+			[
+				"pickRE",
+				"pickRequestStatusId\t(ChaosPickRequest.vue)"
+			],
+			[
+				"quantityPick",
+				"quantityPickedPending"
+			],
+			[
+				"quan",
+				"quantityPicked\t(ChaosPickRequest.vue)"
+			],
+			[
+				"quant",
+				"quantityAllocated\t(ChaosPickRequest.vue)"
+			],
+			[
+				"mark",
+				"markPicked\t(ChaosPickRequest.vue)"
+			],
+			[
+				"activePickRequest",
+				"activePickRequestItemInventory"
+			],
+			[
+				"ch",
+				"chaosZone"
+			],
+			[
+				"zoneLi",
+				"lookupZoneList"
+			],
+			[
+				"pro",
+				"products"
+			],
+			[
+				"looku",
+				"lookupProductQueue"
+			],
+			[
+				"thisRe",
+				"thisReportData"
+			],
+			[
+				"pickRequests",
+				"pickRequestStatusId"
+			],
+			[
+				"Inventory",
+				"InventoryLocationItem"
+			],
+			[
+				"combin",
+				"combineIDs"
+			],
+			[
+				"succes",
+				"successStage3"
+			],
+			[
+				"pickRequestSta",
+				"pickRequestStatusId"
+			],
+			[
+				"pickR",
+				"pickRequestTypeId"
+			],
+			[
+				"canFul",
+				"canFulfillOrder"
+			],
+			[
+				"posFind",
+				"posFindMatchingPickRequestItem"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".eslintrc.js",
+			"settings":
+			{
+				"buffer_size": 665,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "layouts/default.vue",
+			"settings":
+			{
+				"buffer_size": 1288,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			],
+			[
+				"en",
+				"Package Control: Enable Package"
+			],
+			[
+				"upgrade",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"alignt",
+				"AlignTab"
+			],
+			[
+				"align",
+				"AlignTab: Live Preview Mode"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"came",
+				"Convert Case: camelCase"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"camel",
+				"Convert Case: camelCase"
+			],
+			[
+				"six",
+				"Set Syntax: Six"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"terminal",
+				"Terminality: Browse Commands..."
+			],
+			[
+				"termin",
+				"Terminal: Open"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"cam",
+				"Convert Case: camelCase"
+			],
+			[
+				"disable pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"package con",
+				"Package Control: Install Package"
+			],
+			[
+				"quick",
+				"File: Quick File Open"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"conve",
+				"Convert Case: Title Case"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"snippet",
+				"Snippet: bs3-container"
+			],
+			[
+				"manager",
+				"SnippetManager: Create"
+			],
+			[
+				"sync",
+				"Sync Settings: Download"
+			],
+			[
+				"",
+				"Sync Settings: Create and Upload"
+			],
+			[
+				"svn",
+				"TortoiseSVN: Commit"
+			],
+			[
+				"pvr",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"package cont",
+				"Package Control: Install Package"
+			],
+			[
+				"colored",
+				"Color Scheme Editor: Edit current color scheme"
+			],
+			[
+				"color",
+				"Color Scheme Editor: Edit current color scheme"
+			],
+			[
+				"colorsch",
+				"Color Scheme Editor: Edit current color scheme"
+			],
+			[
+				"colorsu",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colors",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"package ",
+				"Package Control: List Packages"
+			],
+			[
+				"sub",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"pacakge",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"colorsub",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"packge",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublim",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"Package Control: l",
+				"Package Control: List Packages"
+			],
+			[
+				"html",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"co",
+				"Package Control: Install Package"
+			],
+			[
+				"handler",
+				"Snippet: ColdBox Event Handler"
+			],
+			[
+				"coldfusion",
+				"Set Syntax: ColdFusion Component"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"wire",
+				"Snippet: WireBox Configuration Object"
+			],
+			[
+				"coldbox",
+				"Snippet: Create a ColdBox Virtual Entity Service"
+			],
+			[
+				"cold",
+				"Snippet: Create a ColdBox Generic ORM Entity Service"
+			],
+			[
+				"coldbo",
+				"Snippet: ColdBox Interceptor"
+			],
+			[
+				"action\t",
+				"Snippet: Create an Active ORM Entity"
+			]
+		],
+		"width": 492.0
+	},
+	"console":
+	{
+		"height": 715.0,
+		"history":
+		[
+			"view.run_command(\"unfold_all\")",
+			"prv",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"index_files=False;",
+			";",
+			"index_files=False",
+			"index_files=false;",
+			"sublime.index_files(False)",
+			"index_files(false)",
+			"index_files=false",
+			"sublime.index_files(false)",
+			"sublime.log_input(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_input(True)",
+			"view.window().run_command('close_cftag')",
+			"update",
+			"upgrade",
+			"sublime.log_commands(True)",
+			"sublime.log_input(True)",
+			"view.window().run_command('close_cftag')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Websites/whack-a-mole",
+		"/D/Websites/whack-a-mole/layouts",
+		"/D/Websites/whack-a-mole/pages"
+	],
+	"file_history":
+	[
+		"/D/Websites/whack-a-mole/package.json",
+		"/C/Users/jerem/Desktop/GuidedSteps Mark.svg",
+		"/D/Websites/guidedsteps/pages/designguide/index.vue",
+		"/D/Websites/guidedsteps/components/Logo.vue",
+		"/D/Websites/guidedsteps/pages/index.vue",
+		"/D/Websites/guidedsteps/components/Navbar.vue",
+		"/D/Websites/guidedsteps/tasks/favicons.js",
+		"/D/Websites/guidedsteps/package.json",
+		"/D/Websites/guidedsteps/.eslintrc.js",
+		"/D/Websites/guidedsteps/pages/admin.vue",
+		"/D/Websites/guidedsteps/pages/blog.vue",
+		"/D/Websites/guidedsteps/nuxt.config.js",
+		"/D/Websites/guidedsteps/project.sublime-project",
+		"/D/Websites/test/test/nuxt.config.ts",
+		"/D/Websites/guidedsteps/store/index.js",
+		"/D/Websites/guidedsteps/nuxt.config.ts",
+		"/D/Websites/guidedsteps/pages/spiritualgifts/index.vue",
+		"/D/Websites/guidedsteps/pages/tap/index.vue",
+		"/D/Websites/guidedsteps/pages/login/index.vue",
+		"/D/Websites/guidedsteps/components/FastSteps.vue",
+		"/D/Websites/guidedsteps/assets/site.scss",
+		"/D/Websites/guidedsteps/mixins/assessment.js",
+		"/D/Websites/guidedsteps/pages/policy/terms-of-service.vue",
+		"/D/Websites/guidedsteps/pages/policy/privacy.vue",
+		"/D/Websites/guidedsteps/pages/policy/returns.vue",
+		"/D/Websites/guidedsteps/pages/policy/cookies.vue",
+		"/D/Websites/guidedsteps/pages/policy/eula.vue",
+		"/D/Websites/guidedsteps/layouts/secure.vue",
+		"/D/Websites/guidedsteps/layouts/unknown.vue",
+		"/D/Websites/guidedsteps/layouts/full-width.vue",
+		"/D/Websites/guidedsteps/components/FooterContent.vue",
+		"/D/Websites/guidedsteps/server/api/site/site.js",
+		"/D/Websites/guidedsteps/layouts/default.vue",
+		"/D/Websites/guidedsteps/config/navbarMenu.js",
+		"/D/Websites/guidedsteps/pages/policy/index.vue",
+		"/D/Websites/guidedsteps/pages/contact/index.vue",
+		"/D/Websites/guidedsteps/app.html",
+		"/D/Websites/guidedsteps/layouts/fast.vue",
+		"/D/Websites/guidedsteps/plugins/doorbell.js",
+		"/D/Websites/guidedsteps/pages/fast/index.vue",
+		"/D/Websites/guidedsteps/pages/spiritualgifts/_question.vue",
+		"/D/Websites/guidedsteps/layouts/error.vue",
+		"/D/Websites/guidedsteps/pages/opportunities/index.vue",
+		"/D/Websites/guidedsteps/server/api/site/index.js",
+		"/D/Websites/guidedsteps/server/database/guidedsteps/models/site.js",
+		"/D/Websites/guidedsteps/config/ecosystem.config.js",
+		"/D/Websites/guidedsteps/config/site.guidedsteps.com.conf",
+		"/D/Websites/guidedsteps/config/guidedsteps.com.conf",
+		"/D/Websites/guidedsteps/config/build-nginx.README",
+		"/D/Websites/guidedsteps/pages/test/index.vue",
+		"/D/Websites/guidedsteps/server/api/scribble/test.js",
+		"/D/Websites/guidedsteps/pages/admin/blog/index.vue",
+		"/D/Websites/guidedsteps/pages/admin/page/index.vue",
+		"/D/Websites/guidedsteps/pages/admin/tap/index.vue",
+		"/D/Websites/guidedsteps/server/api/scribble/index.js",
+		"/D/Websites/guidedsteps/pages/enneagram/index.vue",
+		"/D/Websites/guidedsteps/pages/errors/403.vue",
+		"/D/Websites/guidedsteps/shipitfile.js",
+		"/D/Websites/guidedsteps/deploy.sh",
+		"/D/Websites/guidedsteps/pages/errors/429.vue",
+		"/D/Websites/guidedsteps/pages/errors/503.vue",
+		"/D/Websites/guidedsteps/pages/errors/502.vue",
+		"/D/Websites/guidedsteps/pages/errors/501.vue",
+		"/D/Websites/guidedsteps/pages/errors/500.vue",
+		"/D/Websites/guidedsteps/pages/errors/413.vue",
+		"/D/Websites/guidedsteps/pages/errors/404.vue",
+		"/D/Websites/guidedsteps/pages/errors/401.vue",
+		"/D/Websites/guidedsteps/pages/errors/400.vue",
+		"/D/Websites/guidedsteps/pages/individual/index.vue",
+		"/D/Websites/guidedsteps/pages/non-profits/index.vue",
+		"/D/Websites/guidedsteps/pages/churches/index.vue",
+		"/D/Websites/guidedsteps/assets/bulma-override.sass",
+		"/D/Websites/guidedsteps/node_modules/bulma/sass/layout/hero.sass",
+		"/D/Websites/blackfisk.com/config/components/tools/purchasing/ManagePurchaseOrder.vue",
+		"/D/Websites/blackfisk.com/config/components/Tutorials.vue",
+		"/D/Websites/blackfisk.com/config/routes.js",
+		"/D/Websites/guidedsteps/components/Cloudinary/VideoPlayer.vue",
+		"/D/Websites/blackfisk.com/api/routes/tasks/ebay.js",
+		"/D/Websites/blackfisk.com/api/routes/blackfisk/product/index.js",
+		"/D/Websites/blackfisk.com/config/components/blackfisk/warehouse/WarehouseDashboard.vue",
+		"/D/Websites/blackfisk.com/api/routes/tasks/website.js",
+		"/D/Websites/blackfisk.com/config/db/config.js",
+		"/D/Websites/blackfisk.com/api/routes/tasks/omoes.js",
+		"/D/Websites/blackfisk.com/lib/channelOrderUtilities.js",
+		"/D/Websites/blackfisk.com/api/routes/tasks/amazon.js",
+		"/D/Websites/blackfisk.com/lib/amazonUtilities.js",
+		"/D/Websites/blackfisk.com/lib/amazonFormatUtilities.js",
+		"/D/Websites/blackfisk.com/runner/tasks.js",
+		"/D/Websites/blackfisk.com/task/amazon/mws/mws.js",
+		"/D/Websites/blackfisk.com/task/amazon/index.js",
+		"/D/Websites/blackfisk.com/api/routes/tasks/blackfisk.js",
+		"/D/Websites/blackfisk-ecommerce/nuxt.config.js",
+		"/D/Websites/storybook/examples/vue-kitchen-sink/package.json",
+		"/D/Websites/blackfisk.com/api/routes/v1/blackfisk/generate/label.js",
+		"/D/Websites/blackfisk.com/lib/labelUtilities.js",
+		"/D/Websites/blackfisk.com/api/routes/v1/blackfisk/print/print.js",
+		"/D/Websites/blackfisk.com/config/components/blackfisk/warehouse/WarehouseStockTransfer.vue",
+		"/D/Websites/blackfisk.com/config/db/chaos/models/serverPrinter.js",
+		"/D/Websites/blackfisk.com/lib/mapperUtilities.js",
+		"/D/Websites/blackfisk.com/config/assets/stylus/navbar.styl",
+		"/D/Websites/blackfisk.com/api/routes/blackfisk/shipping/rates.js",
+		"/D/Websites/blackfisk.com/api/routes/tasks/autofill.js",
+		"/D/Websites/blackfisk.com/config/db/blackfisk/models/inventory.js",
+		"/D/Websites/blackfisk-chrome-app/chrome/build/webpack.prod.conf.js",
+		"/D/Websites/blackfisk.com/api/routes/tasks/import.js",
+		"/D/Websites/blackfisk.com/config/site.js",
+		"/D/Websites/blackfisk.com/site/build/webpack.base.conf.js",
+		"/D/Websites/blackfisk.com/config/assets/stylus/colors.styl",
+		"/D/Websites/blackfisk.com/api/routes/v1/crawler/crawler.js",
+		"/D/Websites/blackfisk.com/api/routes/blackfisk/warehouse/index.js",
+		"/D/Websites/blackfisk.com/api/plugins/utils.js",
+		"/D/Websites/blackfisk.com/api/routes/v1/blackfisk/inventory/utilities.js",
+		"/D/Websites/blackfisk.com/api/routes/v1/blackfisk/chaos/chaos.js",
+		"/D/Websites/blackfisk.com/api/routes/tasks/slam.js",
+		"/D/Websites/blackfisk.com/api/routes/blackfisk/vendors/index.js",
+		"/D/Websites/blackfisk.com/config/db/blackfisk/models/channelSiteCategory.js",
+		"/D/Websites/blackfisk.com/config/db/blackfisk/models/channelListingData.js",
+		"/D/Websites/blackfisk.com/config/db/blackfisk/models/channelListing.js",
+		"/D/Websites/blackfisk.com/lib/amazonCategoryUtilities.js",
+		"/D/Websites/blackfisk.com/lib/utilities.js",
+		"/D/Websites/blackfisk.com/lib/environmental.js",
+		"/D/Websites/blackfisk.com/api/routes/tasks/skubana.js",
+		"/D/Websites/blackfisk.com/config/db/blackfisk/models/pickRequestItem.js",
+		"/D/Websites/blackfisk.com/config/db/blackfisk/models/pickRequest.js",
+		"/D/Websites/blackfisk.com/config/db/blackfisk/models/channelOrder.js",
+		"/D/Websites/blackfisk.com/api/routes/blackfisk/search/product.js",
+		"/D/Websites/blackfisk.com/api/routes/tasks/walmart.js",
+		"/D/Websites/blackfisk.com/api/routes/blackfisk/account/index.js"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 138.0,
+		"where_history":
+		[
+			"D:\\Websites\\guidedsteps\\pages",
+			"D:\\Websites\\guidedsteps",
+			"D:\\Websites\\guidedsteps\\pages",
+			"D:\\Websites\\guidedsteps\\store",
+			"D:\\Websites\\guidedsteps\\pages",
+			"D:\\Websites\\guidedsteps",
+			"D:\\Websites\\guidedsteps\\layouts",
+			"D:\\Websites\\guidedsteps\\components",
+			"D:\\Websites\\guidedsteps\\pages",
+			"D:\\Websites\\guidedsteps\\node_modules\\bulma\\sass"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"DCDCDC",
+			"polygon",
+			"none",
+			"polygon",
+			"000000",
+			"transition",
+			"animation",
+			"background",
+			"color",
+			"background",
+			"polygon",
+			"color",
+			"background",
+			"guidedsteps",
+			"polygon",
+			"><",
+			"v1555612724",
+			"v1554731955",
+			"v1555612724",
+			"nuxt",
+			"nuxt-ts",
+			"axios",
+			"if (this.$cookies.get('jwt')) {",
+			"grey",
+			"sass",
+			"require",
+			"$doorbell",
+			"primary",
+			"doorbell",
+			"this",
+			"$doorbell",
+			"link",
+			"span Lorem",
+			"b-notification",
+			"Email Address",
+			"</li>",
+			"</ol>",
+			"<li>",
+			"<ol>",
+			"</p>",
+			"<p>",
+			"</h2>",
+			"<h2>",
+			"</p>",
+			"<p>",
+			"</ul>",
+			"</h3>",
+			"</h4>",
+			"<h4>",
+			"<h3>",
+			"</h2>",
+			"</strong>",
+			"<strong>",
+			"</p>",
+			"</li>",
+			"<li>",
+			"<ul>",
+			"<p>",
+			"<h2>",
+			"<h3>",
+			"<h2>",
+			"<p>",
+			"p #[b",
+			"</ul>",
+			"</li>",
+			"<li>",
+			"</strong>",
+			"<strong>",
+			"</p>",
+			"<p>",
+			"</h1>",
+			"<h1>",
+			"Guided Steps Program",
+			"is-size-4",
+			"<li>",
+			"</li>",
+			"</p>",
+			"<p>",
+			"<h3>",
+			"</h3>",
+			"<span class=\"app_name\">",
+			"<span class=\"company_name\">",
+			"</",
+			"screen",
+			"getScreen",
+			"mobile",
+			"@import",
+			"import",
+			"bulma",
+			"li.steps-segment.is-selected",
+			".steps:not(.is-hollow)",
+			".is-hollow",
+			".is-mobile",
+			"doorbell",
+			"frame-ancestors",
+			".steps-marker",
+			"step-segment",
+			"details",
+			"wj-range",
+			"wijmo",
+			"has-navbar",
+			"has-navbar-",
+			"pageTemplate",
+			"this",
+			"path",
+			"timezones",
+			"Timezone",
+			"$axios(",
+			"@",
+			"error",
+			"access_log",
+			"churches",
+			"Churches",
+			"churches",
+			"Equipping leaders",
+			"A battle tested daily guide to live the life God most desires for you!",
+			".hero-video",
+			";",
+			"; "
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"folders":
+	[
+		{
+			"path": "D:\\Websites\\whack-a-mole"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".eslintrc.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 665,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								665,
+								665
+							]
+						],
+						"settings":
+						{
+							"SL.13.region_keys":
+							[
+							],
+							"SL.37.region_keys":
+							[
+							],
+							"SL.43.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bs_sintax": "javascript (eslint)",
+							"buffer_scroll_name": "b273e34f",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"spell_check": true,
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JavaScript (ESLint).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "layouts/default.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1288,
+								1288
+							]
+						],
+						"settings":
+						{
+							"SL.14.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.40.region_keys":
+							[
+								"SL.eslint.Highlights.|babb4faea915c92ebf402d6534e8ff93c8f82d8a04282fba48015b140f151c07|region.redish markup.error.sublime_linter|32",
+								"SL.eslint.Highlights.|822c29f5c71be58eef24e5b5cf7907e364b844509c7771395d5db245bdfacb53|region.redish markup.error.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.eslint.Highlights.|552519cd36d01b9dd1cbc4438548d3a87827d6526a184a0722e05e8d683a8ad4|region.redish markup.error.sublime_linter|32",
+								"SL.eslint.Gutter.|region.redish markup.error.sublime_linter|dot",
+								"SL.eslint.Highlights.|92abbae59bed7f1994ccbef710150e1995bfc9fabe51d1f3e87e84311a3a5dc9|region.redish markup.error.sublime_linter|32",
+								"SL.eslint.Highlights.|54303d1908afdf99bae60dccd622521fe692da25861c1e84b44d7475ac3d492c|region.redish markup.error.sublime_linter|32",
+								"SL.eslint.Highlights.|cffc36b61355926de56b818aa4da46b06422e374e3b9e9db29a418aa6257624a|region.redish markup.error.sublime_linter|32",
+								"SL.eslint.Highlights.|ded37bde88da33d9f24d139428135f0baf31a9e526836e83b68a8de5a096bc2f|region.redish markup.error.sublime_linter|32"
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"bs_sintax": "vue component",
+							"buffer_scroll_name": "9a37836d",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"spell_check": true,
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 73.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 590.0
+	},
+	"output.find_results":
+	{
+		"height": 591.0
+	},
+	"pinned_build_system": "Packages/Golang Build/Go.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"coldbox.cfc",
+				"s | Config\\Coldbox.cfc"
+			],
+			[
+				"orderservice",
+				"s | models\\orm\\order\\orderService.cfc"
+			],
+			[
+				"cart/index.cfm",
+				"VenCommerce/modules/vencommerce/views/cart/index.cfm"
+			],
+			[
+				"cart.cfc",
+				"VenCommerce/model/cart/cart.cfc"
+			],
+			[
+				"carti",
+				"VenCommerce/model/cart/cartItem.cfc"
+			],
+			[
+				"nav",
+				"views/sites/usicna/nav.cfm"
+			],
+			[
+				"coldbox",
+				"config/Coldbox.cfc"
+			],
+			[
+				"scraper",
+				"handlers/automated/scraper.cfc"
+			],
+			[
+				"gather",
+				"botfly/plugins/gatherLinks.cfc"
+			],
+			[
+				"cache",
+				"config/CacheBox.cfc"
+			],
+			[
+				"gathe",
+				"botfly/plugins/gatherEmails.cfc"
+			],
+			[
+				"config/r",
+				"botfly/modules/coldbox-relax/config/Routes.cfm"
+			],
+			[
+				"botfly/plugins/gat",
+				"botfly/plugins/gatherLinks.cfc"
+			],
+			[
+				"views/age",
+				"views/agent/index.cfm"
+			],
+			[
+				"views/agent",
+				"views/agent/index.cfm"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Websites\\base-deployment\\base-deployment.sublime-project"
+			],
+			[
+				"black",
+				"D:\\Websites\\blackfisk.com\\Blackfisk.sublime-project"
+			],
+			[
+				"guided",
+				"D:\\Websites\\guidedsteps\\project.sublime-project"
+			],
+			[
+				"guideds",
+				"D:\\Websites\\guidedsteps\\project.sublime-project"
+			],
+			[
+				"guidedste",
+				"D:\\Websites\\guidedsteps\\project.sublime-project"
+			],
+			[
+				"base",
+				"D:\\Websites\\base-deployment\\base-deployment.sublime-project"
+			],
+			[
+				"guid",
+				"D:\\Websites\\guidedsteps\\project.sublime-project"
+			],
+			[
+				"guide",
+				"D:\\Websites\\guidedsteps\\project.sublime-project"
+			],
+			[
+				"slam",
+				"D:\\Websites\\slamweb.geartree.com\\slamweb.sublime-project"
+			],
+			[
+				"nextste",
+				"D:\\Websites\\nextstepguru\\nextstepguru.sublime-project"
+			],
+			[
+				"geartree",
+				"D:\\Websites\\slamweb.geartree.com\\slamweb.sublime-project"
+			],
+			[
+				"monit",
+				"D:\\Websites\\monitor-service\\monitor-service.sublime-project"
+			],
+			[
+				"craw",
+				"D:\\Websites\\crawler\\crawler.sublime-project"
+			],
+			[
+				"cr",
+				"D:\\Websites\\crawler\\crawler.sublime-project"
+			],
+			[
+				"web",
+				"D:\\Websites\\websocket-server\\websocket-server.sublime-project"
+			],
+			[
+				"t",
+				"D:\\Websites\\touchhaiti\\touchhaiti.sublime-project"
+			],
+			[
+				"slamweb",
+				"D:\\Websites\\slamweb.geartree.com\\slamweb.sublime-project"
+			],
+			[
+				"guidedsteps",
+				"D:\\Websites\\guidedsteps\\project.sublime-project"
+			],
+			[
+				"gui",
+				"D:\\Websites\\guidedsteps\\project.sublime-project"
+			],
+			[
+				"slamwe",
+				"D:\\Websites\\slamweb-vue.geartree.com\\slamweb-vue.geartree.com.sublime-project"
+			],
+			[
+				"gear",
+				"D:\\Websites\\slamweb.geartree.com\\slamweb.sublime-project"
+			],
+			[
+				"geart",
+				"D:\\Websites\\slamweb.geartree.com\\slamweb.sublime-project"
+			],
+			[
+				"s",
+				"D:\\Websites\\slamweb-vue.geartree.com\\slamweb-vue.geartree.com.sublime-project"
+			],
+			[
+				"bas",
+				"D:\\Websites\\base-deployment\\base-deployment.sublime-project"
+			],
+			[
+				"slamewb",
+				"D:\\Websites\\slamweb.geartree.com\\slamweb.sublime-project"
+			],
+			[
+				"vstx",
+				"D:\\Websites\\vstx-data-table\\project.sublime-project"
+			],
+			[
+				"vuestack",
+				"D:\\Websites\\vuestacks.com\\project.sublime-project"
+			],
+			[
+				"gerat",
+				"D:\\Websites\\slamweb.geartree.com\\slamweb.sublime-project"
+			],
+			[
+				"moni",
+				"D:\\Websites\\monitor-service\\monitor-service.sublime-project"
+			],
+			[
+				"gea",
+				"D:\\Websites\\slamweb.geartree.com\\slamweb.sublime-project"
+			],
+			[
+				"chan",
+				"D:\\Dropbox\\Websites\\loc.channelconnection.co\\ChannelConnection.sublime-project"
+			],
+			[
+				"emop",
+				"D:\\Dropbox\\Websites\\emop.be\\eMop-be.sublime-project"
+			],
+			[
+				"we",
+				"D:\\Dropbox\\Websites\\loc.outlandusa.com\\MainWeb.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 636.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 325.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
