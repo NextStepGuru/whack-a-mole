@@ -5,42 +5,68 @@
       .columns
         .column.has-text-centered
           .buttons
-            button.button.is-large.is-success(
+            button.button.is-success(
               @click="start",
-              :disabled="state.startTime") Start Game
-            button.button.is-large.is-danger(
+              :disabled="state.startTime") Start
+            button.button.is-danger(
               @click="stopInterval",
-              :disabled="!state.startTime") Stop Game
+              :disabled="!state.startTime") Stop
+            button.button.is-info(
+              @click="state.isModalConfigActive = !state.isModalConfigActive",
+              :disabled="state.startTime") Controls
         .column.has-text-centered
-          h2.is-size-2 Speed
-          input.slider.is-fullwidth.is-large.is-primary(
-            v-model="state.speedInSeconds"
-            step="0.1"
-            min="0.5"
-            max="3"
-            value="1"
-            type="range",
-            @input="changeInterval")
-        .column.has-text-centered
-          h2.is-size-2 Score
+          h2 Score
           span {{ state.score}}
         .column.has-text-centered
-          h2.is-size-2 Click Misses
+          h2 Click Misses
           span {{ state.miss}}
         .column.has-text-centered
-          h2.is-size-2 Time Left
+          h2 Time Left
           span {{ timeLeft() }} seconds
 
   .hero.is-success
     .hero-body
       .container
         .columns.is-multiline.is-mobile
-          .column.is-1(v-for="(item, idx) in state.moles")
+          .column(:class="computeClassSize", v-for="(item, idx) in state.moles")
             mole-hill(
               :key="idx",
               v-bind="item",
               @score="score",
               @miss="miss")
+  b-modal(
+    :active.sync="state.isModalConfigActive",
+    :width="640",
+    scroll="keep")
+    .box
+      .field
+        label.label Game Length
+          span.help (in seconds)
+        .control
+          input.input.is-fullwidth.is-large.is-primary(
+            v-model="state.maxTimeInSeconds",
+            type="number",
+            step="1",
+            min="1",
+            max="99999")
+      .field
+        label.label Speed
+        .control
+          input.input.slider.is-fullwidth.is-large.is-primary(
+            v-model="state.speedInSeconds"
+            step="0.1"
+            min="0.5"
+            max="3"
+            value="1"
+            type="range")
+      .field
+        label.label Total Moles
+        .control
+          select.select.is-fullwidth.is-large.is-primary(
+            v-model="state.totalMoles")
+            option(v-for="i in [9, 12, 16, 18, 24, 48, 60]", :key="i", :value="i") {{ i }} moles
+      .field
+        button.button.is-primary(@click="saveControls") Save
 </template>
 
 <script>
@@ -48,6 +74,7 @@ import Moment from 'moment'
 import MoleHill from '~/components/MoleHill.vue'
 
 const DefaultState = {
+  isModalConfigActive: false,
   maxTimeInSeconds: 10,
   endTime: null,
   startTime: null,
@@ -73,19 +100,42 @@ export default {
     }
   },
   computed: {
+    computeClassSize () {
+      switch (this.state.totalMoles) {
+        case 9:
+          return 'is-one-third'
+
+        case 12:
+        case 16:
+        case 24:
+          return 'is-one-quarter'
+
+        case 18:
+          return 'is-2'
+      }
+      return 'is-1'
+    }
   },
   mounted () {
     this.resetState()
   },
   methods: {
-    resetState () {
-      this.state = DefaultState
-
+    saveControls () {
+      this.state.isModalConfigActive = !this.state.isModalConfigActive
+      this.state.moles = {}
+      this.repaintMoles()
+    },
+    repaintMoles () {
       for (let i = 0; i < this.state.totalMoles; i++) {
         this.$set(this.state.moles, `${i + 1}`, {
           isMoleHidden: true
         })
       }
+    },
+    resetState () {
+      this.state = DefaultState
+
+      this.repaintMoles()
     },
     timeLeft () {
       return this.state.maxTimeInSeconds - Moment().diff(this.state.startTime, 'second') || 0
@@ -104,7 +154,11 @@ export default {
     },
     computeScore () {
       this.stopInterval()
-      this.resetState()
+      this.state.endTime = null
+      this.state.startTime = null
+      this.state.score = null
+      this.state.miss = 0
+      this.state.activeMoles = []
     },
     stopInterval () {
       let vm = this
