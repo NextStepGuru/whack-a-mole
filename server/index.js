@@ -6,10 +6,21 @@ const DB = require('./database/db.js')
 const { Server } = require('hapi')
 const Boom = require('boom')
 
+const File = require('fs')
+
+const OS = require('os')
+const tls = {
+  key: File.readFileSync(process.env.NODE_ENV !== 'development' && OS.platform() !== 'win32'
+    ? '/etc/letsencrypt/live/nextstep.guru/privkey.pem' : './config/privkey.pem'),
+  cert: File.readFileSync(process.env.NODE_ENV !== 'development' && OS.platform() !== 'win32'
+    ? '/etc/letsencrypt/live/nextstep.guru/fullchain.pem' : './config/fullchain.pem')
+}
+
 async function start () {
   const server = new Server({
     host: process.env.HOST || '0.0.0.0',
     port: process.env.PORT || 3000,
+    tls: tls,
     routes: {
       validate: {
         failAction: async (request, h, err) => {
