@@ -46,7 +46,7 @@ module.exports = [
       let currentScore = await Leaderboard
         .query(NextStepGuruDB)
         .insertAndFetch({
-          user: request.payload.userId,
+          userId: request.payload.userId,
           score: request.payload.score
         })
 

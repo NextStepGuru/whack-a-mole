@@ -102,7 +102,7 @@ import { mapGetters } from 'vuex'
 
 const DefaultState = {
   isModalConfigActive: false,
-  maxTimeInSeconds: 10,
+  maxTimeInSeconds: 30,
   endTime: null,
   startTime: null,
   currentTime: Moment(new Date()).format("hh:mm:ss"),
@@ -112,7 +112,7 @@ const DefaultState = {
   intervalClock: null,
   speedInSeconds: 1,
   maxMoles: 1,
-  totalMoles: 24,
+  totalMoles: 12,
   activeMoles: [],
   moles: {
   }
