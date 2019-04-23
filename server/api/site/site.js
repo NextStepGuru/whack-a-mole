@@ -11,7 +11,7 @@ module.exports = [
       let siteLookup = await Site
         .query(NextStepGuruDB)
         .where({
-          domain: request.headers['x-forwarded-host'] ? request.headers['x-forwarded-host'] : 'www.guidedsteps.com'
+          domain: request.headers['x-forwarded-host'] ? request.headers['x-forwarded-host'] : 'www.nextstepguru.com'
         })
         .first()
 

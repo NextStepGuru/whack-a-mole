@@ -43,11 +43,11 @@ routes.push({
     for (let i = 0; i < getPages.length; i++) {
       results.push(`
         <url>
-          <loc>https://www.guidedsteps.com${getPages[i].path}</loc>
+          <loc>https://www.nextstepguru.com${getPages[i].path}</loc>
           <lastmod>${Moment(getPages[i].lastPublishedAt).format('YYYY-MM-DDTHH:mm:ssZ')}</lastmod>
           <xhtml:link
              rel="alternate" hreflang="en-us"
-             href="https://www.guidedsteps.com${getPages[i].path}"/>
+             href="https://www.nextstepguru.com${getPages[i].path}"/>
         </url>
       `)
     }
@@ -59,13 +59,13 @@ routes.push({
           xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
           xmlns:xhtml="http://www.w3.org/1999/xhtml">
           <url>
-            <loc>https://www.guidedsteps.com/</loc>
+            <loc>https://www.nextstepguru.com/</loc>
             <lastmod>${Moment().format('YYYY-MM-DDTHH:mm:ssZ')}</lastmod>
             <xhtml:link
                rel="alternate" hreflang="en-us"
-               href="https://www.guidedsteps.com/"/>
+               href="https://www.nextstepguru.com/"/>
             <image:image>
-               <image:loc>https://res.cloudinary.com/guidedsteps/image/upload/s--H9BlFJ6K--/c_scale,w_1024/v1550678366/GuidedSteps_Mark_Logo.png</image:loc>
+               <image:loc>https://res.cloudinary.com/nextstepguru/image/upload/s--H9BlFJ6K--/c_scale,w_1024/v1550678366/GuidedSteps_Mark_Logo.png</image:loc>
                <image:title>Guided Steps Logo and Mark</image:title>
             </image:image>
           </url>

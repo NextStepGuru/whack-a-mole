@@ -1,6 +1,5 @@
 export default ({ $axios, req, store, app, redirect, $router }, inject) => {
   if (store.getters['isUserLoggedIn']) {
-    console.log('isUserLoggedIn', store.getters['isUserLoggedIn'])
     $axios.setToken(app.$cookies.get('jwt'))
   }
 

@@ -96,7 +96,7 @@ module.exports = [
 
         let emailResult = await PostmarkClient.sendEmailWithTemplate({
           TemplateId: SignupTemplate.config.TemplateId,
-          From: SiteConfig.guidedsteps.email.from,
+          From: SiteConfig.nextstepguru.email.from,
           To: user.email,
           TemplateModel: {
             user: user
@@ -188,7 +188,7 @@ module.exports = [
 
       if (user) {
         user.passwordResetRequestedAt = new Date()
-        user.passwordResetToken = uuid(`${new Date().getTime()}`, SiteConfig.guidedsteps.server.uuidToken).replace(/-/g, '')
+        user.passwordResetToken = uuid(`${new Date().getTime()}`, SiteConfig.nextstepguru.server.uuidToken).replace(/-/g, '')
 
         user = await User
           .query(NextStepGuruDB)
@@ -203,11 +203,11 @@ module.exports = [
 
         await PostmarkClient.sendEmailWithTemplate({
           TemplateId: LostPasswordTemplate.config.TemplateId,
-          From: SiteConfig.guidedsteps.email.from,
+          From: SiteConfig.nextstepguru.email.from,
           To: user.email,
           TemplateModel: {
             user: user,
-            actionUrl: `${SiteConfig.guidedsteps.baseURL}/login/reset/${user.uuid}/${user.passwordResetToken}`
+            actionUrl: `${SiteConfig.nextstepguru.baseURL}/login/reset/${user.uuid}/${user.passwordResetToken}`
           }
         })
         // console.debug('emailSent', emailResult)
@@ -248,8 +248,8 @@ module.exports = [
 
       user.password = Utilities.encryptPassword(request.payload.password)
       user.passwordResetAt = new Date()
-      user.uuid = uuid(`${new Date().getTime()}-uuid`, SiteConfig.guidedsteps.server.uuidToken).replace(/-/g, '')
-      user.passwordResetToken = uuid(`${new Date().getTime()}-passwordResetToken`, SiteConfig.guidedsteps.server.uuidToken).replace(/-/g, '')
+      user.uuid = uuid(`${new Date().getTime()}-uuid`, SiteConfig.nextstepguru.server.uuidToken).replace(/-/g, '')
+      user.passwordResetToken = uuid(`${new Date().getTime()}-passwordResetToken`, SiteConfig.nextstepguru.server.uuidToken).replace(/-/g, '')
 
       user = await User
         .query(NextStepGuruDB)
@@ -271,7 +271,7 @@ module.exports = [
 
       let emailResult = await PostmarkClient.sendEmailWithTemplate({
         TemplateId: ResetEmailConfirmationTemplate.config.TemplateId,
-        From: SiteConfig.guidedsteps.email.from,
+        From: SiteConfig.nextstepguru.email.from,
         To: user.email,
         TemplateModel: {
           user: user

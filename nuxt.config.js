@@ -3,10 +3,6 @@ const FavIconConfig = require('./static/nuxt.json')
 
 module.exports = {
   mode: 'spa',
-
-  /*
-   ** Headers of the page
-   */
   head: {
     title: "Whack-a-mole Demo",
     meta: [
@@ -26,14 +22,13 @@ module.exports = {
    */
   loading: { color: '#fff' },
 
-  /*
-   ** Global CSS
-   */
+  router: {
+    middleware: 'auth',
+    scrollBehavior: function (to, from, savedPosition) {
+      return { x: 0, y: 0 }
+    }
+  },
   css: [],
-
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [
     '~/plugins/nextstepguru',
     '~/plugins/axios'
@@ -48,10 +43,6 @@ module.exports = {
       }
     ]
   },
-
-  /*
-   ** Nuxt.js modules
-   */
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
@@ -60,16 +51,9 @@ module.exports = {
     'nuxt-buefy',
     '@nuxtjs/pwa'
   ],
-  /*
-   ** Axios module configuration
-   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
-  /*
-   ** Build configuration
-   */
   build: {
     /*
      ** You can extend webpack config here

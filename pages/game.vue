@@ -102,6 +102,9 @@ const DefaultState = {
 
 export default {
   name: 'Home',
+  meta: {
+    roles: ['user']
+  },
   components: {
     'mole-hill': MoleHill
   },
