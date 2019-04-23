@@ -47,7 +47,8 @@ module.exports = [
         .query(NextStepGuruDB)
         .insertAndFetch({
           userId: request.payload.userId,
-          score: request.payload.score
+          score: request.payload.score,
+          timeInSeconds: request.payload.timeInSeconds
         })
 
       let leaderboard = await Leaderboard

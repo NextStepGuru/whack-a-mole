@@ -192,7 +192,8 @@ export default {
         data: {
           userId: this.getUser.id,
           score: this.state.score,
-          miss: this.state.miss
+          miss: this.state.miss,
+          timeInSeconds: this.state.maxTimeInSeconds
         }
       })
 
