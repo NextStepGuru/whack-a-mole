@@ -29,6 +29,9 @@
             .column.has-text-centered
               h2.has-text-weight-bold Time
               span.is-size-5 {{ state.currentTime }}
+      .column.is-3.has-text-centered
+        .buttons
+          nuxt-link.button.is-warning(to="/logout") Sign-out
 
   .hero.is-light
     .hero-body

@@ -52,7 +52,7 @@ module.exports = {
     '@nuxtjs/pwa'
   ],
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: process.env.NODE_ENV === 'production' ? '/' : `https://loc.nextstep.guru:3000`
   },
   build: {
     /*

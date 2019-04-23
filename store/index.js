@@ -65,13 +65,15 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit ({ commit, dispatch }) {
-    if (this.$cookies && this.$cookies.get('jwt')) {
+    if (this.$cookies.get('jwt')) {
       this.$axios.setToken(this.$cookies.get('jwt'))
 
       const RES = await this.$axios({
         method: 'get',
         url: '/api/login'
       })
+
+      console.log('RES', RES)
 
       if (RES.data.code === 200) {
         dispatch('setUser', { user: RES.data.data[0] })
@@ -84,17 +86,6 @@ export const actions = {
         this.$cookies.remove('jwt')
         this.$axios.setToken(false)
       }
-    }
-  },
-  async saveUserSettings ({ getters, rootGetters }) {
-    if (getters.isUserLoggedIn) {
-      await this.$axios({
-        method: 'PUT',
-        url: `/api/user/settings`,
-        data: {
-          settings: rootGetters['settings/getAllSettings']
-        }
-      })
     }
   },
   async setNextPath ({ commit }, payload) {
@@ -129,9 +120,6 @@ export const actions = {
   },
   setUser ({ commit, dispatch }, payload) {
     commit('setUser', payload)
-    if (payload && payload.user && payload.user.settings) {
-      dispatch('settings/loadSettings', payload.user.settings)
-    }
   },
   setUserKey ({ commit }, payload, event) {
     commit('setUserKey', {

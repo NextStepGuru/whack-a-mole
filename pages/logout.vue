@@ -18,12 +18,23 @@ export default {
 
     return returnData
   },
-  mounted () {
-    this.setUser(false)
-    this.$cookies.remove('jwt')
-    this.$axios.setToken(false)
-    this.setLogout()
-    this.$router.push({ path: '/' })
+  async mounted () {
+    await this.setUser(false)
+
+    let dn = window.location.hostname.split('.')
+    if (dn.length === 3) {
+      dn.splice(0, 1)
+    }
+    dn = dn.join('.')
+    await this.$cookies.remove('jwt', {
+      path: '/',
+      domain: `.${dn}`,
+      maxAge: 60 * 60 * 24 * 365,
+      secure: true
+    })
+    await this.$axios.setToken(false)
+    await this.setLogout()
+    await this.$router.push({ path: '/' })
   },
   methods: {
     ...mapActions([

@@ -116,11 +116,18 @@ export default {
       if (RES.statusCode !== 200) {
         this.state.errors.push(RES.data.error[0])
       } else {
+        let dn = window.location.hostname.split('.')
+        if (dn.length === 3) {
+          dn.splice(0, 1)
+        }
+        dn = dn.join('.')
         this.$axios.setToken(RES.data.data[0].token)
         this.setUser({ user: RES.data.data[0] })
         this.$cookies.set('jwt', RES.data.data[0].token, {
           path: '/',
-          maxAge: 60 * 60 * 24 * 365
+          domain: `.${dn}`,
+          maxAge: 60 * 60 * 24 * 365,
+          secure: true
         })
         this.$router.push({ path: '/dashboard' })
       }

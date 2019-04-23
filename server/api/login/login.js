@@ -24,7 +24,7 @@ module.exports = [
           id: request.auth.credentials.id
         })
         .first()
-
+      console.log('test')
       const jwtToken = await Jwt.sign({
         id: user.id
       }, Config.JWT_API_SECRET, {
@@ -318,10 +318,11 @@ const Utilities = {
       .state('jwt', token, {
         ttl: 365 * 24 * 60 * 60 * 1000, // expires a year from today
         encoding: 'none', // we already used JWT to encode
-        isSecure: false, // warm & fuzzy feelings
+        isSecure: true, // warm & fuzzy feelings
         isHttpOnly: true, // prevent client alteration
-        clearInvalid: false, // remove invalid cookies
-        strictHeader: true, // don't allow violations of RFC 6265
+        clearInvalid: true, // remove invalid cookies
+        domain: '.nextstep.guru',
+        strictHeader: false, // don't allow violations of RFC 6265
         path: '/'
       })
   }
