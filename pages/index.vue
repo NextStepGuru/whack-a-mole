@@ -2,7 +2,7 @@
 .mole-body
   .container
     .columns
-      .column.is-2.has-text-centered
+      .column.is-3.has-text-centered
         .buttons
           button.button.is-success(
             @click="start",
@@ -13,21 +13,22 @@
           button.button.is-info(
             @click="state.isModalConfigActive = !state.isModalConfigActive",
             :disabled="state.startTime") Controls
-      .column.is-8
+      .column.is-6
         .scoreboard
           .columns
             .column.has-text-centered
-              h2.has-text-weight-bold Score
+              h2.has-text-weight-bold Hits
               span.is-size-2 {{ state.score}}
             .column.has-text-centered
-              h2.has-text-weight-bold Click Misses
+              h2.has-text-weight-bold Misses
               span.is-size-2 {{ state.miss}}
             .column.has-text-centered
-              h2.has-text-weight-bold Seconds Left
+              h2.has-text-weight-bold Countdown
               span.is-size-2 {{ timeLeft() }}
+          .columns
             .column.has-text-centered
               h2.has-text-weight-bold Time
-              span.is-size-2 {{ getFormattedTime() }}
+              span.is-size-5 {{ state.currentTime }}
 
   .hero.is-light
     .hero-body
@@ -86,9 +87,11 @@ const DefaultState = {
   maxTimeInSeconds: 10,
   endTime: null,
   startTime: null,
+  currentTime: Moment(new Date()).format("hh:mm:ss"),
   score: 0,
   miss: 0,
   interval: null,
+  intervalClock: null,
   speedInSeconds: 1,
   maxMoles: 1,
   totalMoles: 24,
@@ -126,10 +129,16 @@ export default {
   },
   mounted () {
     this.resetState()
+
+    this.intervalClock = setInterval(this.time, 1000)
+  },
+  beforeDestroy() {
+    clearInterval(this.interval)
+    clearInterval(this.intervalClock)
   },
   methods: {
-    getFormattedTime () {
-      return Moment().format("hh:mm")
+    time () {
+      this.state.currentTime = Moment(new Date()).format("hh:mm:ss")
     },
     saveControls () {
       this.state.isModalConfigActive = !this.state.isModalConfigActive
@@ -153,17 +162,19 @@ export default {
     },
     miss () {
       this.$toast.open({
-          duration: 1000,
-          message: `You Missed!!`,
-          type: 'is-danger'
+        duration: 250,
+        message: `You Missed!!`,
+        type: 'is-danger',
+        queue: false
       })
       this.state.miss++
     },
     score () {
       this.$toast.open({
-        duration: 1000,
+        duration: 250,
         message: `Hit! Congrats on Whacking that Mole!`,
-        type: 'is-success'
+        type: 'is-success',
+        queue: false
       })
       this.state.score++
     },
@@ -237,5 +248,5 @@ export default {
   object-fit cover
   overflow hidden
   color white
-  padding-top 170px
+  padding-top 130px
 </style>
