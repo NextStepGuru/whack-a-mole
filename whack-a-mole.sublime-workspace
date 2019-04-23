@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"mol",
+				"MoleHill"
+			],
+			[
 				"Logo",
 				"Logo.vue\t(index.vue)"
 			],
@@ -510,30 +514,16 @@
 			[
 				"canFul",
 				"canFulfillOrder"
-			],
-			[
-				"posFind",
-				"posFindMatchingPickRequestItem"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": ".eslintrc.js",
+			"file": "server/index.js",
 			"settings":
 			{
-				"buffer_size": 665,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "layouts/default.vue",
-			"settings":
-			{
-				"buffer_size": 1288,
-				"encoding": "UTF-8",
+				"buffer_size": 470,
 				"line_ending": "Unix"
 			}
 		}
@@ -549,6 +539,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"pack",
 				"Package Control: Install Package"
@@ -583,10 +577,6 @@
 			],
 			[
 				"isntall",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -901,11 +891,36 @@
 	[
 		"/D/Websites/whack-a-mole",
 		"/D/Websites/whack-a-mole/layouts",
-		"/D/Websites/whack-a-mole/pages"
+		"/D/Websites/whack-a-mole/pages",
+		"/D/Websites/whack-a-mole/pages/login",
+		"/D/Websites/whack-a-mole/pages/login/reset",
+		"/D/Websites/whack-a-mole/pages/login/reset/_uuid",
+		"/D/Websites/whack-a-mole/server",
+		"/D/Websites/whack-a-mole/server/database",
+		"/D/Websites/whack-a-mole/server/database/guidedsteps",
+		"/D/Websites/whack-a-mole/server/database/guidedsteps/config",
+		"/D/Websites/whack-a-mole/server/database/guidedsteps/eager",
+		"/D/Websites/whack-a-mole/server/database/guidedsteps/models",
+		"/D/Websites/whack-a-mole/store"
 	],
 	"file_history":
 	[
+		"/D/Websites/whack-a-mole/pages/login/signup.vue",
+		"/D/Websites/whack-a-mole/pages/index.vue",
+		"/D/Websites/whack-a-mole/store/index.js",
+		"/D/Websites/whack-a-mole/layouts/default.vue",
+		"/D/Websites/whack-a-mole/components/MoleHill.vue",
+		"/D/Websites/whack-a-mole/pages/login/reset/_uuid/_token.vue",
+		"/D/Websites/whack-a-mole/pages/login/forgot.vue",
+		"/D/Websites/whack-a-mole/pages/game.vue",
+		"/D/Websites/whack-a-mole/pages/login/index.vue",
+		"/D/Websites/whack-a-mole/nuxt.config.js",
 		"/D/Websites/whack-a-mole/package.json",
+		"/D/Websites/whack-a-mole/tasks/favicons.js",
+		"/D/Websites/whack-a-mole/assets/dirt.svg",
+		"/D/Websites/whack-a-mole/assets/mole_and_dirt.svg",
+		"/D/Websites/whack-a-mole/components/Mole.vue",
+		"/D/Websites/whack-a-mole/.eslintrc.js",
 		"/C/Users/jerem/Desktop/GuidedSteps Mark.svg",
 		"/D/Websites/guidedsteps/pages/designguide/index.vue",
 		"/D/Websites/guidedsteps/components/Logo.vue",
@@ -1017,22 +1032,7 @@
 		"/D/Websites/blackfisk.com/api/routes/blackfisk/warehouse/index.js",
 		"/D/Websites/blackfisk.com/api/plugins/utils.js",
 		"/D/Websites/blackfisk.com/api/routes/v1/blackfisk/inventory/utilities.js",
-		"/D/Websites/blackfisk.com/api/routes/v1/blackfisk/chaos/chaos.js",
-		"/D/Websites/blackfisk.com/api/routes/tasks/slam.js",
-		"/D/Websites/blackfisk.com/api/routes/blackfisk/vendors/index.js",
-		"/D/Websites/blackfisk.com/config/db/blackfisk/models/channelSiteCategory.js",
-		"/D/Websites/blackfisk.com/config/db/blackfisk/models/channelListingData.js",
-		"/D/Websites/blackfisk.com/config/db/blackfisk/models/channelListing.js",
-		"/D/Websites/blackfisk.com/lib/amazonCategoryUtilities.js",
-		"/D/Websites/blackfisk.com/lib/utilities.js",
-		"/D/Websites/blackfisk.com/lib/environmental.js",
-		"/D/Websites/blackfisk.com/api/routes/tasks/skubana.js",
-		"/D/Websites/blackfisk.com/config/db/blackfisk/models/pickRequestItem.js",
-		"/D/Websites/blackfisk.com/config/db/blackfisk/models/pickRequest.js",
-		"/D/Websites/blackfisk.com/config/db/blackfisk/models/channelOrder.js",
-		"/D/Websites/blackfisk.com/api/routes/blackfisk/search/product.js",
-		"/D/Websites/blackfisk.com/api/routes/tasks/walmart.js",
-		"/D/Websites/blackfisk.com/api/routes/blackfisk/account/index.js"
+		"/D/Websites/blackfisk.com/api/routes/v1/blackfisk/chaos/chaos.js"
 	],
 	"find":
 	{
@@ -1043,6 +1043,7 @@
 		"height": 138.0,
 		"where_history":
 		[
+			"D:\\Websites\\whack-a-mole",
 			"D:\\Websites\\guidedsteps\\pages",
 			"D:\\Websites\\guidedsteps",
 			"D:\\Websites\\guidedsteps\\pages",
@@ -1060,6 +1061,57 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"disabled",
+			"dashboard",
+			"black",
+			"guided",
+			"sett",
+			"ass",
+			"pageHeading",
+			"pageHead",
+			"hh:mm",
+			"is-size-3",
+			"@click=",
+			"@click=\"missMole\"",
+			"hh:mm",
+			"is-size-2",
+			"vm",
+			"this",
+			"span",
+			"scoreboard",
+			"input",
+			"Game",
+			".is-large",
+			".is-size-2",
+			"h2.is-size-2",
+			"column",
+			"path(d",
+			":class=\"{'mole'",
+			"const",
+			"isMoleVisible",
+			"state.isMoleVisible",
+			"mole-animation",
+			"translateX",
+			"M163.32,252.1a7.5,7.5,0,0,1,4,1.13h.1a7.52,7.52,0,0,1,7.52,7.13c0,.13,0,.26,0,.39a7.63,7.63,0,0,1-.65,3.06A7.43,7.43,0,0,1,175.5,268c0,.13,0,.26,0,.39A7.52,7.52,0,0,1,168,275.5a7.36,7.36,0,0,1-1.16-.09,7.51,7.51,0,0,1-8.11.08h-.45a7.53,7.53,0,0,1-7.53-7.52,7.44,7.44,0,0,1,.67-3.06,7.39,7.39,0,0,1-1.28-4.17,7.53,7.53,0,0,1,7.53-7.52,7.21,7.21,0,0,1,1.48.15,7.43,7.43,0,0,1,4.19-1.28Z",
+			"M246.42,251.56a7.5,7.5,0,0,1,4,1.13h.1a7.52,7.52,0,0,1,7.52,7.13c0,.13,0,.26,0,.39a7.54,7.54,0,0,1-.65,3.05,7.49,7.49,0,0,1,1.26,4.18c0,.13,0,.26,0,.39a7.52,7.52,0,0,1-7.52,7.13,7.36,7.36,0,0,1-1.16-.09,7.56,7.56,0,0,1-8.11.08h-.45a7.49,7.49,0,0,1-6.86-10.59,7.34,7.34,0,0,1-1.28-4.16,7.53,7.53,0,0,1,7.53-7.52,8,8,0,0,1,1.48.14,7.5,7.5,0,0,1,4.19-1.27Z",
+			"M163.32,252.1a7.5,7.5,0,0,1,4,1.13h.1a7.52,7.52,0,0,1,7.52,7.13c0,.13,0,.26,0,.39a7.63,7.63,0,0,1-.65,3.06A7.43,7.43,0,0,1,175.5,268c0,.13,0,.26,0,.39A7.52,7.52,0,0,1,168,275.5a7.36,7.36,0,0,1-1.16-.09,7.51,7.51,0,0,1-8.11.08h-.45a7.53,7.53,0,0,1-7.53-7.52,7.44,7.44,0,0,1,.67-3.06,7.39,7.39,0,0,1-1.28-4.17,7.53,7.53,0,0,1,7.53-7.52,7.21,7.21,0,0,1,1.48.15,7.43,7.43,0,0,1,4.19-1.28Z",
+			"M209.53,200a17.09,17.09,0,0,1,6.14,1.1h.16c6.25,0,11.37,3,11.68,6.89,0,.12,0,.25,0,.37a5,5,0,0,1-1,3,5.52,5.52,0,0,1,2,4c0,.13,0,.25,0,.38-.31,3.84-5.43,6.89-11.68,6.89a17.83,17.83,0,0,1-1.81-.09,18,18,0,0,1-12.6.08h-.69c-6.45,0-11.7-3.26-11.7-7.27a5,5,0,0,1,1-3,5.53,5.53,0,0,1-2-4c0-4,5.25-7.26,11.7-7.26a17.33,17.33,0,0,1,2.3.14,16.92,16.92,0,0,1,6.5-1.24Z",
+			"M273.22,135.29a17.84,17.84,0,0,0-10.63,3.4,18.25,18.25,0,0,0-7.84-1.75c-9.15,0-16.56,6.59-16.56,14.69a13.11,13.11,0,0,0,.81,4.56,13.69,13.69,0,0,0-4.16,9.69,13.12,13.12,0,0,0,.54,3.66,17,17,0,0,0-4.13,1.78,16.2,16.2,0,0,0-6.16,4.78v0a38.72,38.72,0,0,0-4.37,1.94c-2.62-6.06-7.62-10.46-13.56-11.5a16.14,16.14,0,0,0-21.72-.47,16.19,16.19,0,0,0-9.5-3.16c-9.51,0-17.3,8.54-18.16,19.41a16,16,0,0,0-5.34-.94,17.29,17.29,0,0,0-14,7.63c-.93,0-1.87-.1-2.81-.1a54.42,54.42,0,0,0-8.5.66c-3.16-6.4-9.06-10.72-15.82-10.72-7.67,0-14.23,5.55-16.93,13.41-2.87-7.4-9.21-12.56-16.6-12.56a17.25,17.25,0,0,0-13.9,7.56,15.84,15.84,0,0,0-7.07-1.69c-7.53,0-14,5.36-16.81,13a16.18,16.18,0,0,0-9.19-2.94c-6.77,0-12.69,4.33-15.84,10.75a9.5,9.5,0,0,0-4.31-1.06C4.78,205.35,0,211,0,217.88s4.78,12.53,10.69,12.53a9.57,9.57,0,0,0,5-1.4c.06.11.15.2.22.31A11.2,11.2,0,0,0,24.22,237a15.78,15.78,0,0,0,15.62-1.35c1.29,5.23,5.41,9.06,10.29,9.06a9.13,9.13,0,0,0,2.28-.28,17.25,17.25,0,0,0,14.09.47A9.8,9.8,0,0,0,73.59,248,10.2,10.2,0,0,0,82,243.29c4.4,7.92,16.11,13.74,30.16,14.37,1.84,3.77,5.3,6.32,9.28,6.32a10.28,10.28,0,0,0,8.65-5.19,25,25,0,0,0,3.44,3.06c.83,6,5.24,10.5,10.56,10.5a9.89,9.89,0,0,0,7.44-3.53l.28,0c1.61,4.53,5.42,7.72,9.88,7.72a9.38,9.38,0,0,0,3.65-.75c6.34,4.34,15.52,7.06,25.72,7.06,13.53,0,25.22-4.79,30.91-11.78.77,0,1.55-.09,2.31-.16a17.75,17.75,0,0,0,7,1.47,16.64,16.64,0,0,0,15.31-9.34c.42-.32.81-.63,1.19-1a16.71,16.71,0,0,0,6.94-.25c1.84,3.77,5.31,6.31,9.28,6.31,4.32,0,8-3,9.72-7.31a18.88,18.88,0,0,0,2.84.22,18.16,18.16,0,0,0,8.63-2.16,9.86,9.86,0,0,0,7.31,3.38c4.54,0,8.42-3.33,10-8,.45,0,.89.09,1.34.09a12.78,12.78,0,0,0,3.28-.44,9.65,9.65,0,0,0,6.38,2.47c4.41,0,8.21-3.13,9.84-7.59a17.8,17.8,0,0,0,8.63,2.19,16.78,16.78,0,0,0,14.75-8.22,18.11,18.11,0,0,0,6.22,1.09c9.15,0,16.56-6.75,16.56-15.09a13.73,13.73,0,0,0-.31-2.88,14,14,0,0,0,2-7.18,14.64,14.64,0,0,0-6.47-11.94,14,14,0,0,0,.59-4c0-8.34-7.44-15.1-16.59-15.1a18.63,18.63,0,0,0-2.38.19,12.92,12.92,0,0,0,.5-3.53c0-8.11-7.41-14.69-16.56-14.69l-.78,0c-1.85-3.75-5.32-6.28-9.28-6.28a9.3,9.3,0,0,0-4.35,1.1c-4.1-7-14-12.34-26.12-13.75,0-.27.06-.54.06-.82,0-8.1-7.41-14.65-16.56-14.65ZM314.94,190a14.43,14.43,0,0,0,2.47,3.62c-.92-.12-1.87-.21-2.82-.28a12.68,12.68,0,0,0,.35-3.09Zm-36.56,3c1.22.11,2.48.17,3.75.19a13.08,13.08,0,0,0,.68,2,41.69,41.69,0,0,0-4.56-1.84C278.29,193.19,278.34,193.07,278.38,192.94Z",
+			", 'mole-hidden': state.isMoleVisible",
+			"class=\"mole\"",
+			"<linearGradient",
+			")\"",
+			")/",
+			"<",
+			"</",
+			"is-one-third",
+			"column",
+			"    ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
 			"DCDCDC",
 			"polygon",
 			"none",
@@ -1136,49 +1188,7 @@
 			"is-size-4",
 			"<li>",
 			"</li>",
-			"</p>",
-			"<p>",
-			"<h3>",
-			"</h3>",
-			"<span class=\"app_name\">",
-			"<span class=\"company_name\">",
-			"</",
-			"screen",
-			"getScreen",
-			"mobile",
-			"@import",
-			"import",
-			"bulma",
-			"li.steps-segment.is-selected",
-			".steps:not(.is-hollow)",
-			".is-hollow",
-			".is-mobile",
-			"doorbell",
-			"frame-ancestors",
-			".steps-marker",
-			"step-segment",
-			"details",
-			"wj-range",
-			"wijmo",
-			"has-navbar",
-			"has-navbar-",
-			"pageTemplate",
-			"this",
-			"path",
-			"timezones",
-			"Timezone",
-			"$axios(",
-			"@",
-			"error",
-			"access_log",
-			"churches",
-			"Churches",
-			"churches",
-			"Equipping leaders",
-			"A battle tested daily guide to live the life God most desires for you!",
-			".hero-video",
-			";",
-			"; "
+			"</p>"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1202,236 +1212,30 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": ".eslintrc.js",
-					"semi_transient": false,
+					"file": "server/index.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 665,
+						"buffer_size": 470,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								665,
-								665
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"SL.13.region_keys":
+							"SL.123.region_keys":
 							[
-							],
-							"SL.37.region_keys":
-							[
-							],
-							"SL.43.region_keys":
-							[
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"bs_sintax": "javascript (eslint)",
-							"buffer_scroll_name": "b273e34f",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"spell_check": true,
-							"syntax": "Packages/zzz A File Icon zzz/aliases/JavaScript (ESLint).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "layouts/default.vue",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1288,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1288,
-								1288
-							]
-						],
-						"settings":
-						{
-							"SL.14.region_keys":
-							[
-								"sublime_linter.protected_regions"
-							],
-							"SL.40.region_keys":
-							[
-								"SL.eslint.Highlights.|babb4faea915c92ebf402d6534e8ff93c8f82d8a04282fba48015b140f151c07|region.redish markup.error.sublime_linter|32",
-								"SL.eslint.Highlights.|822c29f5c71be58eef24e5b5cf7907e364b844509c7771395d5db245bdfacb53|region.redish markup.error.sublime_linter|32",
-								"sublime_linter.protected_regions",
-								"SL.eslint.Highlights.|552519cd36d01b9dd1cbc4438548d3a87827d6526a184a0722e05e8d683a8ad4|region.redish markup.error.sublime_linter|32",
-								"SL.eslint.Gutter.|region.redish markup.error.sublime_linter|dot",
-								"SL.eslint.Highlights.|92abbae59bed7f1994ccbef710150e1995bfc9fabe51d1f3e87e84311a3a5dc9|region.redish markup.error.sublime_linter|32",
-								"SL.eslint.Highlights.|54303d1908afdf99bae60dccd622521fe692da25861c1e84b44d7475ac3d492c|region.redish markup.error.sublime_linter|32",
-								"SL.eslint.Highlights.|cffc36b61355926de56b818aa4da46b06422e374e3b9e9db29a418aa6257624a|region.redish markup.error.sublime_linter|32",
-								"SL.eslint.Highlights.|ded37bde88da33d9f24d139428135f0baf31a9e526836e83b68a8de5a096bc2f|region.redish markup.error.sublime_linter|32"
 							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.clone": -1,
@@ -1581,12 +1385,12 @@
 								"bh_angle_close",
 								"bh_angle_content"
 							],
-							"bs_sintax": "vue component",
-							"buffer_scroll_name": "9a37836d",
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "f1d8e158",
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"spell_check": true,
-							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1603,7 +1407,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -1648,7 +1452,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 42.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1868,7 +1672,7 @@
 		"selected_items":
 		[
 		],
-		"width": 636.0
+		"width": 592.0
 	},
 	"selected_group": 0,
 	"settings":
