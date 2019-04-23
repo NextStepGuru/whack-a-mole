@@ -87,7 +87,7 @@ export default {
           path: '/',
           maxAge: 60 * 60 * 24 * 365
         })
-        this.$router.push({ path: '/dashboard' })
+        this.$router.push({ path: '/gane' })
       }
     }
   }

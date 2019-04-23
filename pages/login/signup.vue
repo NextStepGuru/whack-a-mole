@@ -14,11 +14,11 @@
           class="is-primary"
           title="Fill out the form below to sign-up",
           @close="$router.push({path: '/'})")
-            message(
+            b-message(
               v-if="state.errors.length",
               :messages="state.errors",
               messageTitle="Error: ",
-              messageType="warning")
+              messageType="warning") {{ state.errors[0] }}
             b-field(label="First Name")
               b-input(
                 type="text",
@@ -129,7 +129,7 @@ export default {
           maxAge: 60 * 60 * 24 * 365,
           secure: true
         })
-        this.$router.push({ path: '/dashboard' })
+        this.$router.push({ path: '/game' })
       }
     }
   }

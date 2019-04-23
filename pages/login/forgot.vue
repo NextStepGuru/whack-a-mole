@@ -14,15 +14,15 @@
           class="is-primary"
           title="Fill out the form below to recovery your lost password.",
           @close="$router.push({path: '/'})")
-            message(
+            b-message(
               v-if="state.errors.length",
               :messages="state.errors",
               messageTitle="Error: ",
-              messageType="warning")
-            message(
+              messageType="warning") {{ state.errors[0] }}
+            b-message(
               v-if="state.success.length",
               :messages="state.success",
-              messageType="Success")
+              messageType="Success") {{ state.success[0] }}
             b-field(label="Email Address")
               b-input(
                 type="email",

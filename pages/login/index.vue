@@ -85,7 +85,7 @@ export default {
   },
   mounted () {
     if (this.isUserLoggedIn) {
-      this.$router.push({ path: '/dashboard' })
+      this.$router.push({ path: '/game' })
     }
   },
   methods: {

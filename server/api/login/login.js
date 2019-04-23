@@ -87,23 +87,25 @@ module.exports = [
 
         response.token = jwtToken
 
-        const SignupTemplate = await EmailTemplate
-          .query(NextStepGuruDB)
-          .where({
-            emailTypeId: 4
+        try {
+          const SignupTemplate = await EmailTemplate
+            .query(NextStepGuruDB)
+            .where({
+              emailTypeId: 4
+            })
+            .first()
+
+          let emailResult = await PostmarkClient.sendEmailWithTemplate({
+            TemplateId: SignupTemplate.config.TemplateId,
+            From: SiteConfig.nextstepguru.email.from,
+            To: user.email,
+            TemplateModel: {
+              user: user
+            }
           })
-          .first()
 
-        let emailResult = await PostmarkClient.sendEmailWithTemplate({
-          TemplateId: SignupTemplate.config.TemplateId,
-          From: SiteConfig.nextstepguru.email.from,
-          To: user.email,
-          TemplateModel: {
-            user: user
-          }
-        })
-
-        console.log('emailSent', emailResult)
+          console.log('emailSent', emailResult)
+        } catch (e) {}
 
         return Utilities.loginResponse(h, response, jwtToken)
       } catch (err) {
