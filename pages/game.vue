@@ -2,7 +2,8 @@
 .mole-body
   .container
     .columns
-      .column.is-3.has-text-centered
+      .column.is-3
+        h1.is-size-3 Actions
         .buttons
           button.button.is-success(
             @click="start",
@@ -18,18 +19,31 @@
           .columns
             .column.has-text-centered
               h2.has-text-weight-bold Hits
-              span.is-size-2 {{ state.score}}
+              span.is-size-1 {{ state.score}}
             .column.has-text-centered
               h2.has-text-weight-bold Misses
-              span.is-size-2 {{ state.miss}}
+              span.is-size-1 {{ state.miss}}
             .column.has-text-centered
               h2.has-text-weight-bold Countdown
-              span.is-size-2 {{ timeLeft() }}
-          .columns
+              span.is-size-1 {{ timeLeft() }}
+          .columns(style="padding-bottom: 10px")
             .column.has-text-centered
-              h2.has-text-weight-bold Time
-              span.is-size-5 {{ state.currentTime }}
-      .column.is-3.has-text-centered
+              h2.has-text-weight-bold 1st Place
+              span.is-size-7 {{ getFirst }}
+            .column.has-text-centered
+              h2.has-text-weight-bold 2nd Place
+              span.is-size-7 {{ getSecond }}
+            .column.has-text-centered
+              h2.has-text-weight-bold 3rd Place
+              span.is-size-7 {{ getThird }}
+            .column.has-text-centered
+              h2.has-text-weight-bold 4th Place
+              span.is-size-7 {{ getFourth }}
+            .column.has-text-centered
+              h2.has-text-weight-bold 5th Place
+              span.is-size-7 {{ getFifth }}
+      .column.is-3
+        h1.is-size-3 Welcome {{ getUser.firstName }}
         .buttons
           nuxt-link.button.is-warning(to="/logout") Sign-out
 
@@ -84,6 +98,7 @@
 <script>
 import Moment from 'moment'
 import MoleHill from '~/components/MoleHill.vue'
+import { mapGetters } from 'vuex'
 
 const DefaultState = {
   isModalConfigActive: false,
@@ -113,10 +128,12 @@ export default {
   },
   data () {
     return {
+      leaderboard: [],
       state: DefaultState
     }
   },
   computed: {
+    ...mapGetters(['getScreen', 'getUser', 'getMobileUserAgent']),
     computeClassSize () {
       switch (this.state.totalMoles) {
         case 9:
@@ -131,11 +148,26 @@ export default {
           return 'is-2'
       }
       return 'is-1'
+    },
+    getFirst () {
+      return this.leaderboard.length && this.leaderboard[0].user.firstName
+    },
+    getSecond () {
+      return this.leaderboard.length && this.leaderboard[1].user.firstName
+    },
+    getThird () {
+      return this.leaderboard.length && this.leaderboard[2].user.firstName
+    },
+    getFourth () {
+      return this.leaderboard.length && this.leaderboard[3].user.firstName
+    },
+    getFifth () {
+      return this.leaderboard.length && this.leaderboard[4].user.firstName
     }
   },
   mounted () {
     this.resetState()
-
+    this.loadLeaderboard()
     this.intervalClock = setInterval(this.time, 1000)
   },
   beforeDestroy() {
@@ -143,6 +175,31 @@ export default {
     clearInterval(this.intervalClock)
   },
   methods: {
+    async loadLeaderboard () {
+      const RES = await this.$axios({
+        method: 'GET',
+        url: '/api/leaderboard'
+      })
+
+      if (RES.statusCode === 200) {
+        this.$set(this, 'leaderboard', RES.data.data[0].leaderboard)
+      }
+    },
+    async recordScore () {
+      const RES = await this.$axios({
+        method: 'post',
+        url: '/api/leaderboard',
+        data: {
+          userId: this.getUser.id,
+          score: this.state.score,
+          miss: this.state.miss
+        }
+      })
+
+      if (RES.statusCode === 200) {
+        this.$set(this, 'leaderboard', RES.data.data[0].leaderboard)
+      }
+    },
     time () {
       this.state.currentTime = Moment(new Date()).format("hh:mm:ss")
     },
@@ -195,6 +252,7 @@ export default {
       this.state.endTime = null
       this.state.startTime = null
       this.state.activeMoles = []
+      this.recordScore()
     },
     stopInterval () {
       let vm = this
