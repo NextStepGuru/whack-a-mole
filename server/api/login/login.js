@@ -14,12 +14,12 @@ module.exports = [
     method: ['get'],
     path: '/api/login',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const User = request.server.app.db.nextstepguru.models.user
       let response = {}
 
       let user = await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           id: request.auth.credentials.id
         })
@@ -50,7 +50,7 @@ module.exports = [
     method: ['post'],
     path: '/api/login',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const EmailTemplate = request.server.app.db.nextstepguru.models.emailTemplate
       const User = request.server.app.db.nextstepguru.models.user
 
@@ -59,7 +59,7 @@ module.exports = [
 
 
       let checkUser = await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           email: user.email
         })
@@ -73,7 +73,7 @@ module.exports = [
         user.password = Utilities.encryptPassword(request.payload.password)
 
         user = await User
-          .query(GuidedStepsDB)
+          .query(NextStepGuruDB)
           .upsertGraphAndFetch(user)
 
         response = user
@@ -88,7 +88,7 @@ module.exports = [
         response.token = jwtToken
 
         const SignupTemplate = await EmailTemplate
-          .query(GuidedStepsDB)
+          .query(NextStepGuruDB)
           .where({
             emailTypeId: 4
           })
@@ -128,11 +128,11 @@ module.exports = [
     method: ['post'],
     path: '/api/login/verify',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const User = request.server.app.db.nextstepguru.models.user
 
       let user = await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           email: request.payload.email
         })
@@ -173,14 +173,14 @@ module.exports = [
     method: ['post'],
     path: '/api/login/lostPassword',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const EmailTemplate = request.server.app.db.nextstepguru.models.emailTemplate
       const User = request.server.app.db.nextstepguru.models.user
 
       let response = [`If your account was located, we will send an email to ${request.payload.email}.`]
 
       let user = await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           email: request.payload.email
         })
@@ -191,11 +191,11 @@ module.exports = [
         user.passwordResetToken = uuid(`${new Date().getTime()}`, SiteConfig.guidedsteps.server.uuidToken).replace(/-/g, '')
 
         user = await User
-          .query(GuidedStepsDB)
+          .query(NextStepGuruDB)
           .upsertGraphAndFetch(user)
 
         const LostPasswordTemplate = await EmailTemplate
-          .query(GuidedStepsDB)
+          .query(NextStepGuruDB)
           .where({
             emailTypeId: 9
           })
@@ -230,12 +230,12 @@ module.exports = [
     method: ['post'],
     path: '/api/login/resetPassword',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const EmailTemplate = request.server.app.db.nextstepguru.models.emailTemplate
       const User = request.server.app.db.nextstepguru.models.user
 
       let user = await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           uuid: request.payload.uuid,
           passwordResetToken: request.payload.token
@@ -252,7 +252,7 @@ module.exports = [
       user.passwordResetToken = uuid(`${new Date().getTime()}-passwordResetToken`, SiteConfig.guidedsteps.server.uuidToken).replace(/-/g, '')
 
       user = await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .upsertGraphAndFetch(user)
 
       const jwtToken = await Jwt.sign({
@@ -263,7 +263,7 @@ module.exports = [
       })
 
       const ResetEmailConfirmationTemplate = await EmailTemplate
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           emailTypeId: 14
         })

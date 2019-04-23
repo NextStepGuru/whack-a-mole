@@ -10,13 +10,13 @@ module.exports = [
     method: ['get'],
     path: '/api/page/list',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const Page = request.server.app.db.nextstepguru.models.page
       const PageFolder = request.server.app.db.nextstepguru.models.pageFolder
       const PageType = request.server.app.db.nextstepguru.models.pageType
 
       let pageList = await Page
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           isActive: 1
         })
@@ -25,11 +25,11 @@ module.exports = [
         .eager('[type, folder]')
 
       let folderList = await PageFolder
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .orderBy('name')
 
       let typeList = await PageType
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where('id', request.query.pageTypeId === '0' ? '!=' : '=', 3)
         .orderBy('name')
 
@@ -52,7 +52,7 @@ module.exports = [
     method: ['get'],
     path: '/api/page/test',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const EmailTemplate = request.server.app.db.nextstepguru.models.emailTemplate
 
       return {}
@@ -70,11 +70,11 @@ module.exports = [
     method: 'post',
     path: '/api/page',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const Page = request.server.app.db.nextstepguru.models.page
 
       let pageData = await Page
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           path: request.payload.path
         })
@@ -108,11 +108,11 @@ module.exports = [
     method: 'post',
     path: '/api/page/auth',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const Page = request.server.app.db.nextstepguru.models.page
 
       let pageData = await Page
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           path: request.payload.path
         })
@@ -123,7 +123,7 @@ module.exports = [
         try {
           let slugs = request.payload.path.split('/')
           pageData = await Page
-            .query(GuidedStepsDB)
+            .query(NextStepGuruDB)
             .insertAndFetch({
               isActive: 1,
               pageTypeId: slugs.indexOf('blog') ? 3 : 1,
@@ -133,7 +133,7 @@ module.exports = [
             })
         } catch (e) {
           pageData = await Page
-            .query(GuidedStepsDB)
+            .query(NextStepGuruDB)
             .where({
               path: request.payload.path
             })
@@ -171,14 +171,14 @@ module.exports = [
     method: ['post'],
     path: '/api/page/save',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const Page = request.server.app.db.nextstepguru.models.page
 
       let page = null
 
       if (request.payload.id) {
         page = await Page
-          .query(GuidedStepsDB)
+          .query(NextStepGuruDB)
           .where({
             id: request.payload.id
           })
@@ -204,7 +204,7 @@ module.exports = [
 
       do {
         let checkPageTitle = await Page
-          .query(GuidedStepsDB)
+          .query(NextStepGuruDB)
           .where('id', '!=', request.payload.id)
           .where({
             path: page.path
@@ -229,7 +229,7 @@ module.exports = [
       }
 
       page = await Page
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .upsertGraphAndFetch(page, {
           noDelete: true
         })

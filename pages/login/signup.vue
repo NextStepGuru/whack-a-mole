@@ -116,9 +116,6 @@ export default {
       if (RES.statusCode !== 200) {
         this.state.errors.push(RES.data.error[0])
       } else {
-        this.$ga.set('userId', RES.data.data[0].id)
-        this.$ga.event('event', 'authentication', 'user-id available')
-        this.$LogRocket.identify(`${RES.data.data[0].id}`, RES.data.data[0])
         this.$axios.setToken(RES.data.data[0].token)
         this.setUser({ user: RES.data.data[0] })
         this.$cookies.set('jwt', RES.data.data[0].token, {

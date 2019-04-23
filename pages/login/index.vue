@@ -14,7 +14,7 @@
           class="is-primary"
           title="Fill out the form below to sign-in",
           @close="$router.push({path: '/'})")
-            message(
+            b-message(
               v-if="state.errors.length",
               :messages="state.errors",
               messageTitle="Error: ",
@@ -106,14 +106,6 @@ export default {
       if (RES.statusCode !== 200) {
         this.state.errors.push(RES.data.error[0])
       } else {
-        this.$ga.set('userId', RES.data.data[0].id)
-        this.$ga.event('event', 'authentication', 'user-id available')
-        this.$LogRocket.identify(`${RES.data.data[0].id}`, RES.data.data[0])
-        if (this.$doorbell && this.$doorbell()) {
-          this.$doorbell().setOption('email', RES.data.data[0].email)
-          this.$doorbell().setProperty('id', RES.data.data[0].id)
-          this.$doorbell().refresh()
-        }
         this.$axios.setToken(RES.data.data[0].token)
         this.setUser({ user: RES.data.data[0] })
         this.$cookies.set('jwt', RES.data.data[0].token, {

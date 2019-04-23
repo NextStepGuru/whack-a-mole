@@ -5,11 +5,11 @@ module.exports = [
     method: ['PUT'],
     path: '/api/user/settings',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const User = request.server.app.db.nextstepguru.models.user
 
       let user = await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           id: request.auth.credentials.id
         })
@@ -18,7 +18,7 @@ module.exports = [
       user.settings = request.payload.settings
 
       await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .update({
           settings: request.payload.settings
         })
@@ -38,11 +38,11 @@ module.exports = [
     method: ['PUT'],
     path: '/api/user/next',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const User = request.server.app.db.nextstepguru.models.user
 
       let user = await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           id: request.auth.credentials.id
         })
@@ -62,7 +62,7 @@ module.exports = [
       user.settings.quickstart = Object.assign(user.settings.quickstart, request.payload)
 
       await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .update({
           lastRoute: nextLoginPath,
           settings: user.settings
@@ -83,11 +83,11 @@ module.exports = [
     method: ['POST'],
     path: '/api/user',
     handler: async (request, h) => {
-      const GuidedStepsDB = request.server.app.db.nextstepguru.db
+      const NextStepGuruDB = request.server.app.db.nextstepguru.db
       const User = request.server.app.db.nextstepguru.models.user
 
       let user = await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .where({
           id: request.auth.credentials.id
         })
@@ -106,7 +106,7 @@ module.exports = [
       delete user.modifiedAt
 
       await User
-        .query(GuidedStepsDB)
+        .query(NextStepGuruDB)
         .update(user)
         .where({
           id: request.auth.credentials.id

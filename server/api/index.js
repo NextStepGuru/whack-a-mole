@@ -25,11 +25,11 @@ routes.push({
     if (request.method === 'options') {
       return 'success'
     }
-    const GuidedStepsDB = request.server.app.db.nextstepguru.db
+    const NextStepGuruDB = request.server.app.db.nextstepguru.db
     const Page = request.server.app.db.nextstepguru.models.page
 
     let getPages = await Page
-      .query(GuidedStepsDB)
+      .query(NextStepGuruDB)
       .where({
         isInSitemap: 1
       })

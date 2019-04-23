@@ -2,12 +2,12 @@
 const Plugin = {}
 
 Plugin.register = async function (server, options) {
-  const GuidedStepsDB = server.app.db.nextstepguru.db
+  const NextStepGuruDB = server.app.db.nextstepguru.db
   const Config = server.app.db.nextstepguru.models.config
   let SiteConfig = {}
 
   let siteData = await Config
-    .query(GuidedStepsDB)
+    .query(NextStepGuruDB)
 
   for (let i = 0; i < siteData.length; i++) {
     SiteConfig[siteData[i].key] = siteData[i].config
