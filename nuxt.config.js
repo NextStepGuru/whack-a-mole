@@ -35,6 +35,16 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [],
+  fontawesome: {
+    component: 'fa',
+    includeCss: false,
+    imports: [
+      {
+        set: '@fortawesome/pro-light-svg-icons',
+        icons: ['faTasks', 'faSearch', 'faBars', 'faCrosshairs', 'faBrowser', 'faSearchLocation', 'faFilePlus', 'faDraftingCompass', 'faPray', 'faCommentAlt', 'faComment', 'faArrowToLeft', 'faArrowToRight', 'faBan', 'faBold', 'faBooks', 'faCode', 'faCogs', 'faEdit', 'faExclamationTriangle', 'faFileAlt', 'faFileEdit', 'faFingerprint', 'faHeading', 'faHome', 'faImages', 'faItalic', 'faLink', 'faListOl', 'faListUl', 'faMailBulk', 'faQuoteRight', 'faRssSquare', 'faSave', 'faSignOut', 'faSignIn', 'faStrikethrough', 'faTrashAlt', 'faUnderline', 'faUpload', 'faUserPlus', 'faUsers', 'faUserAlt', 'faTrafficLightGo', 'faToolbox', 'faBells', 'faTachometer', 'faCampground', 'faAngleDoubleDown', 'faAngleDoubleUp', 'faCheck', 'faPlayCircle', 'faArrowRight', 'faArrowLeft', 'faIdCard', 'faStethoscope', 'faTombstone', 'faTheaterMasks', 'faBible', 'faFilePdf', 'faDownload', 'faFileVideo', 'faFile', 'faFileSpreadsheet', 'faFileInvoice', 'faFileCode', 'faFileAudio', 'faFileArchive']
+      }
+    ]
+  },
 
   /*
    ** Nuxt.js modules
@@ -42,6 +52,7 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    'nuxt-fontawesome',
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
     '@nuxtjs/pwa'
