@@ -34,7 +34,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/nextstepguru',
+    '~/plugins/axios'
+  ],
   fontawesome: {
     component: 'fa',
     includeCss: false,
@@ -50,10 +53,10 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
     'nuxt-fontawesome',
-    // Doc: https://buefy.github.io/#/documentation
+    'cookie-universal-nuxt',
     'nuxt-buefy',
     '@nuxtjs/pwa'
   ],

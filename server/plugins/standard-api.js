@@ -136,6 +136,7 @@ Plugin.register = async function (server, options) {
     let responseBody = {
       error: [],
       code: 200,
+      statusCode: 200,
       message: [],
       data: null,
       timestamp: request.info.received,
@@ -147,6 +148,7 @@ Plugin.register = async function (server, options) {
       var err = request.response
       responseStatusCode = err.output.statusCode
       responseBody.code = err.output.payload.statusCode
+      responseBody.statusCode = err.output.payload.statusCode
       responseBody.error.push((err.err || err.message || err))
       if (os.platform() === 'win32') {
         responseBody.error.push.apply(responseBody.error, err.stack.split('\n'))

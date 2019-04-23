@@ -102,7 +102,7 @@ export default {
           password: this.state.password
         }
       })
-
+      console.log('RES', RES)
       if (RES.statusCode !== 200) {
         this.state.errors.push(RES.data.error[0])
       } else {
