@@ -2,7 +2,7 @@
 .mole-body
   .container
     .columns
-      .column.is-3
+      .column.is-3-desktop.is-2-tablet
         h1.is-size-3 Actions
         .buttons
           button.button.is-success(
@@ -14,35 +14,35 @@
           button.button.is-info(
             @click="state.isModalConfigActive = !state.isModalConfigActive",
             :disabled="state.startTime") Controls
-      .column.is-6
+      .column.is-6-desktop.is-8-tablet
         .scoreboard
-          .columns
+          .columns.is-mobile.scoreboard-top
             .column.has-text-centered
-              h2.has-text-weight-bold Hits
-              span.is-size-1 {{ state.score}}
+              h2.is-size-7-mobile.has-text-weight-bold Hits
+              span.is-size-1-desktop.is-size-4-mobile {{ state.score}}
             .column.has-text-centered
-              h2.has-text-weight-bold Misses
-              span.is-size-1 {{ state.miss}}
+              h2.is-size-7-mobile.has-text-weight-bold Misses
+              span.is-size-1-desktop.is-size-4-mobile {{ state.miss}}
             .column.has-text-centered
-              h2.has-text-weight-bold Countdown
-              span.is-size-1 {{ timeLeft() }}
-          .columns(style="padding-bottom: 10px")
-            .column.has-text-centered
-              h2.has-text-weight-bold 1st Place
+              h2.is-size-7-mobile.has-text-weight-bold Countdown
+              span.is-size-1-desktop.is-size-4-mobile {{ timeLeft() }}
+          .columns.is-mobile.scoreboard-bottom.is-multiline
+            .column.is-4-mobile.has-text-centered
+              h2.is-size-7-mobile.has-text-weight-bold 1st Place
               span.is-size-7 {{ getFirst }}
-            .column.has-text-centered
-              h2.has-text-weight-bold 2nd Place
+            .column.is-4-mobile.has-text-centered
+              h2.is-size-7-mobile.has-text-weight-bold 2nd Place
               span.is-size-7 {{ getSecond }}
-            .column.has-text-centered
-              h2.has-text-weight-bold 3rd Place
+            .column.is-4-mobile.has-text-centered
+              h2.is-size-7-mobile.has-text-weight-bold 3rd Place
               span.is-size-7 {{ getThird }}
-            .column.has-text-centered
-              h2.has-text-weight-bold 4th Place
+            .column.is-4-mobile.has-text-centered
+              h2.is-size-7-mobile.has-text-weight-bold 4th Place
               span.is-size-7 {{ getFourth }}
-            .column.has-text-centered
-              h2.has-text-weight-bold 5th Place
+            .column.is-4-mobile.has-text-centered
+              h2.is-size-7-mobile.has-text-weight-bold 5th Place
               span.is-size-7 {{ getFifth }}
-      .column.is-3
+      .column.is-3-desktop.is-2-tablet
         h1.is-size-3 Welcome {{ getUser.firstName }}
         .buttons
           nuxt-link.button.is-warning(to="/logout") Sign-out
@@ -225,22 +225,24 @@ export default {
       return this.state.maxTimeInSeconds - Moment().diff(this.state.startTime, 'second') || 0
     },
     miss () {
-      this.$toast.open({
-        duration: 250,
-        message: `You Missed!!`,
-        type: 'is-danger',
-        queue: false
-      })
       this.state.miss++
     },
     score () {
-      this.$toast.open({
+      let vm = this
+
+      vm.$toast.open({
         duration: 250,
         message: `Hit! Congrats on Whacking that Mole!`,
         type: 'is-success',
         queue: false
       })
-      this.state.score++
+      vm.state.score++
+
+      for (let i = 0; i < vm.state.activeMoles.length; i++) {
+        let removeMole = vm.state.activeMoles[0]
+        vm.state.moles[`${removeMole}`].isMoleHidden = true
+        vm.state.activeMoles.shift()
+      }
     },
     getRandomInt(min, max) {
       min = Math.ceil(min)
@@ -305,13 +307,33 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="sass">
 .scoreboard
-  font-family 'Orbitron', sans-serif
-  background url('/scoreboard.svg') no-repeat
-  background-size cover
-  object-fit cover
-  overflow hidden
-  color white
-  padding-top 130px
+  font-family: 'Orbitron', sans-serif
+  background: url('/scoreboard.svg') no-repeat top center
+  background-size: cover
+  object-fit: cover
+  overflow: hidden
+  color: white
+  background-size: 100%
+
+.scoreboard-top
+  margin-top: 120px
+
+@media only screen and (max-width: 1023px)
+  .scoreboard-top
+    margin-top: 70px
+
+@media only screen and (width: 768px)
+  .scoreboard-top
+    margin-top: 140px
+
+@media only screen and (max-width: 400px)
+  .scoreboard-top
+    margin-top: 16vw
+
+.scoreboard-bottom
+  padding-bottom: 10px
+
+
 </style>
